@@ -1,0 +1,20 @@
+.menu__list {
+    display: flex;
+    margin-right: 48px;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.menu__item {
+    display: inline-block;
+    margin-right: 27px;
+    vertical-align: middle;
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    &:last-child {
+        margin-right: 0;
+    }
+}

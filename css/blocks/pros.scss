@@ -1,0 +1,25 @@
+.pros__lits {
+    display: flex;
+   
+}
+.pros__item {
+    display: flex;
+    margin-right: 22px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.pros {
+    display: flex;
+    align-items: center;
+}
+.pros__description {
+    width: 100px;
+    line-height: 18px;
+}
+.pros__image {
+    margin-right: 11px;
+    width: 41px;
+    height: 41px;
+  
+}
