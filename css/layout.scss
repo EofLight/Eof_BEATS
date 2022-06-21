@@ -9,10 +9,10 @@ html {
 
 body {
 	font-family: "Play", Helvetica, sans-serif;
-    color: #292929;
+    color: $black;
     font-size: 16px;
     line-height: 1.42;
-    background: #F5F5F5;
+    background: $whiteBg;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -42,6 +42,25 @@ h6 {
 	margin: 0;
 }
 
+h1{
+	font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: $black;
+}
+h3{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+}
+h4{
+	font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+}
 p {
 	margin: 0;
 	padding: 0;
@@ -69,9 +88,10 @@ img {
     overflow: hidden;
 }
 
-
-
 .container {
     margin: 0 auto;
-    width: $containerWidth;
+	width: 95%;
+    max-width: $containerWidth;
+	position: relative;
 }
+

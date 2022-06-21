@@ -10,7 +10,7 @@
 
 .form__row {
     display: flex;
-    margin-bottom: 14px;
+    margin-bottom: 0.882rem;
 }
 
 .form__btns {
@@ -19,59 +19,59 @@
 
 .form__input {
     flex: 1;
-    margin-right: 13px;
-    border-radius: 4px;
+    margin-right: 0.819rem;
+    border-radius: 0.252rem;
     border: none;
     background: #fff;
-    width: 224px;
-    height: 59px;
-    font-size: 18px;
+    width: 14.112rem;
+    height: 3.717rem;
+    font-size: 1.134rem;
     color: #202123;
 
     &:focus-visible {
         outline: none;
-        border: 3px solid #E01F3D;
+        border: 0.189rem solid #E01F3D;
     }
 }
 
 
 .form__item__label {
-    margin-bottom: 6px;
+    margin-bottom: 0.378rem;
 }
 
 .form__input--long {
-    width: 460px;
+    width: 28.98rem;
 }
 
 .form-input--short {
-    margin-right: 12px;
-    width: 106px;
+    margin-right: 0.756rem;
+    width: 6.678rem;
 }
 
 .form__input--textarea {
-    width: 450px;
-    height: 158px;
-    margin-bottom: 36px;
+    width: 28.35rem;
+    height: 9.954rem;
+    margin-bottom: 2.268rem;
 }
 
 .form__column {
-    margin-right: 26px;
+    margin-right: 1.638rem;
 }
 
 .controls__list {
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .controls {
     display: flex;
     flex-direction: column;
-    margin-bottom: 44px;
+    margin-bottom: 2.772rem;
 }
 
 .controls__item {
     display: flex;
-    margin-right: 24px;
+    margin-right: 1.512rem;
 
 }
 
@@ -83,9 +83,9 @@
     &:checked+.form__item__label--radio::before {
         outline: none;
         background: #E01F3D;
-        border: 6px solid #ffffff;
-        width: 13px;
-        height: 13px;
+        border: 0.378rem solid #ffffff;
+        width: 0.819rem;
+        height: 0.819rem;
 
     }
 }
@@ -98,14 +98,14 @@
     &::before {
         content: '';
         display: inline-block;
-        width: 25px;
-        height: 25px;
+        width: 1.575rem;
+        height: 1.575rem;
         flex-shrink: 0;
         flex-grow: 0;
 
         background: #ffffff;
         border-radius: 50%;
-        margin-right: 10px;
+        margin-right: 0.63rem;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 50% 50%;
@@ -132,14 +132,14 @@
     &::before {
         content: '';
         display: inline-block;
-        width: 24px;
-        height: 24px;
+        width: 1.575rem;
+        height: 1.575rem;
         flex-shrink: 0;
         flex-grow: 0;
 
         background: #ffffff;
-        border-radius: 4px;
-        margin-right: 10px;
+        border-radius: 0.252rem;
+        margin-right: 0.63rem;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 50% 50%;
@@ -147,14 +147,14 @@
 }
 
 .form__btn--fat {
-    padding: 20px 40px;
+    padding: 1.26rem 2.52rem;
 }
 
 .btn--color--transparent {
     background: transparent;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 1.197rem;
     text-transform: none;
-    padding: 0px 15px;
+    padding: 0rem 0.945rem;
 }

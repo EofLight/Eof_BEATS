@@ -1,19 +1,19 @@
 .menu__list {
     display: flex;
-    margin-right: 48px;
+    margin-right: 3.024rem;
     justify-content: space-between;
-    margin-top: 2px;
+    margin-top: 0.126rem;
 }
 
 .menu__item {
     display: inline-block;
-    margin-right: 27px;
+    margin-right: 1.701rem;
     vertical-align: middle;
     font-family: 'Alegreya Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.134rem;
+    line-height: 1.89rem;
     &:last-child {
         margin-right: 0;
     }

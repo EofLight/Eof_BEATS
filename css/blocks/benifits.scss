@@ -9,14 +9,15 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-right: 82px;
+    margin-right: 5.166rem;
+    max-width: 15.61rem;
 
     &::after{
         content: "";
         background: url(../img/separator.svg);
         position: absolute;
-        width: 68px;
-        height: 22px;
+        width: 4.284rem;
+        height: 1.386rem;
         right: -25%;
         top: 20%;
     }
@@ -42,24 +43,21 @@
 
 .benifits__image-wrapper {
     position: relative;
-    width: 128px;
-    height: 128px;
+    width: 8.064rem;
+    height: 8.064rem;
     background: #F2F5F4;
     border-radius: 50%;
-    margin-bottom: 24px;
+    margin-bottom: 1.512rem;
 }
 
 .benifits__title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 6px;
+    margin-bottom: 0.378rem;
 }
 
 .benifits__description {
-    line-height: 19px;
+    line-height: 1.197rem;
     text-align: center;
-    width: 247px;
+    width: 100%;
     color: #666666;
     
 }

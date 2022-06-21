@@ -1,10 +1,10 @@
 .pros__lits {
     display: flex;
-   
+    height: 100%;
 }
 .pros__item {
     display: flex;
-    margin-right: 22px;
+    margin-right: 1.386rem;
     &:last-child {
         margin-right: 0;
     }
@@ -14,12 +14,11 @@
     align-items: center;
 }
 .pros__description {
-    width: 100px;
-    line-height: 18px;
+    width: 6.3rem;
+    line-height: 1.134rem;
 }
 .pros__image {
-    margin-right: 11px;
-    width: 41px;
-    height: 41px;
-  
+    margin-right: 1.134rem;
+    width: 2.583rem;
+    height: 2.583rem;
 }

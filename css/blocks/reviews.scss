@@ -1,20 +1,19 @@
 .reviews{
 
         background: #FFF;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
 
 }
-.reviews__container {
-    display: flex;
-    /*padding: 64px 121px;*/
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
 
-.main__titile--reviews {
+.main__title--reviews {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 1.89rem;
 }
 
 .review {
@@ -23,67 +22,63 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 1.26rem;
     
 }
 
 .review__content {
     flex: 2;
-    padding: 75px 105px 25px 0px;
+    padding: 4.725rem 6.615rem 1.575rem 0rem;
     display: flex;
     flex-direction: column;
 }
 
 .avatar {
     flex: 1;
-    padding: 42px 40px 42px 42px;
+    padding: 2.646rem 2.52rem 2.646rem 2.646rem;
     width: 100%;
     height: 100%;
 }
 
 .review__title {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 30px;
+    font-size: 1.512rem;
+    line-height: 1.764rem;
+    margin-bottom: 1.89rem;
 }
 
 .review__content-text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #666666;
-    margin-bottom: 38px;
+    color: $gray;
+    margin-bottom: 2.394rem;
 }
 
 
 .review__username {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21px
+    font-size: 1.134rem;
+    line-height: 1.323rem
 }
 .reviews__pager-list {
     display: flex;
 }
 
 .review__pager-item{
-    margin-right: 7px;
+    margin-right: 0.441rem;
     &:last-child{
         margin-right: 0;
     }
 }
 
 .review__pager-image {
-    height: 74px;
-    width: 74px;
+    height: 4.662rem;
+    width: 4.662rem;
     border-radius: 50%;
     overflow: hidden;
     
 }
 .review__pager-item--active {
     .review__pager-image{
-        border: 4px solid #E01F3D;
+        border: 0.252rem solid #E01F3D;
     }
     
 }

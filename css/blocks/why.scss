@@ -1,31 +1,23 @@
 .why {
  
     background: #ffffff;
-
-}
-
-.why__container {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
+    .container{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .main__title {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 52px;
-    text-transform: uppercase;
-    margin-bottom: 18px;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .why__subtitle {
-    color: #666666;
-    width: 50%;
+    color: $gray;
+    width: 55%;
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 3.465rem;
 }
