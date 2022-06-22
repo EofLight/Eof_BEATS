@@ -1,5 +1,13 @@
 html {
-	font-size: 16px;
+	font-size: $baseFontSize;
+
+	@include tablets{
+		font-size: $baseFontSize - 1px;
+	}
+
+	@include phones{
+		font-size: $baseFontSize - 2px;
+	}
 }
 
 body,
@@ -9,10 +17,10 @@ html {
 
 body {
 	font-family: "Play", Helvetica, sans-serif;
-    color: $black;
-    font-size: 16px;
+    color: #292929;
+    font-size: rem(16px);
     line-height: 1.42;
-    background: $whiteBg;
+    background: #F5F5F5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -48,6 +56,10 @@ h1{
     line-height: 52px;
     text-transform: uppercase;
     color: $black;
+	@include phones{
+		font-size: rem(32px);
+		line-height: rem(36px);
+	}
 }
 h3{
 	font-weight: 700;
@@ -83,15 +95,20 @@ img {
 .wrapper {
 	position: relative;
     width: 100%;
-    min-width: $containerWidth + 20px;
     min-height: 100%;
+	/*min-width: $containerWidth - 50px;*/
     overflow: hidden;
 }
 
 .container {
     margin: 0 auto;
+	max-width: $containerWidth;
 	width: 95%;
-    max-width: $containerWidth;
 	position: relative;
+	min-width: 320px;
+	@include tablets{
+		max-width: rem(696px)+rem(20px);
+	}
+	
 }
 

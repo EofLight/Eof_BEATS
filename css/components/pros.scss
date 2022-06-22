@@ -22,3 +22,9 @@
     width: 2.583rem;
     height: 2.583rem;
 }
+
+.pros{
+    @include tablets{
+        display: none;
+    }
+}

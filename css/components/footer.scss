@@ -1,0 +1,43 @@
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    
+}
+.footer{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: rem(86px);
+        @include phones {
+            flex-direction: column;
+            padding: rem(20px) 0 rem(31px) 0;
+        }
+        .footer__contacts{
+            @include phones {
+                align-items: center;
+            }
+            .contacts{
+                padding: 0;
+                margin-bottom: rem(19px);
+                .contacts__phone{
+                    padding :0;
+                    align-items: baseline;
+                }
+            }
+        }
+    }
+}
+.footer__address {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(21px);
+    line-height: rem(24px);
+    
+@include phones {
+    
+    margin-bottom: rem(12px);
+    
+}}

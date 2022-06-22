@@ -16,8 +16,12 @@
                 <div class="container">
 
                     <header class="header">
-                        <a href="/" class="logo"><img src="./img/logo.svg" alt="logo"
-                                class="logo__image"></a>
+                        <a href="/" class="logo">
+                            <svg class="logo__icon">
+                                <use xlink:href="./img/sprite.svg#logo">
+                                </use>
+                            </svg>
+                        </a>
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
@@ -43,11 +47,19 @@
                                 </li>
                             </ul>
                         </nav>
-                        <address class="contacts">
+                        <address class="contacts header__contacts">
                             <a href="tel:+78007003030" class="contacts__phone">
-                                <img src="./img/phone.svg" alt="phone" class="contacts__image">
+                                <svg class="contacts__image">
+                                    <use xlink:href="./img/sprite.svg#phone">
+                                    </use>
+                                </svg>
                                 8 800 700 30 30</a>
                         </address>
+                        <a href="" class="hamburger">
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
+                        </a>
                     </header>
                     <div class="hero__content">
                         <div class="hero__text-section">
@@ -61,15 +73,24 @@
                         <nav class="pros">
                             <ul class="pros__lits">
                                 <li class="pros__item">
-                                    <img src="./img/noise.svg" alt="noise" class="pros__image">
+                                    <svg class="pros__image">
+                                        <use xlink:href="./img/sprite.svg#noise">
+                                        </use>
+                                    </svg>
                                     <div class="pros__description">Безупречный звук</div>
                                 </li>
                                 <li class="pros__item">
-                                    <img src="./img/battery.svg" alt="noise" class="pros__image">
+                                    <svg class="pros__image">
+                                        <use xlink:href="./img/sprite.svg#battery">
+                                        </use>
+                                    </svg>
                                     <div class="pros__description">До 40 часов работы</div>
                                 </li>
                                 <li class="pros__item">
-                                    <img src="./img/plague.svg" alt="noise" class="pros__image">
+                                    <svg class="pros__image">
+                                        <use xlink:href="./img/sprite.svg#plague">
+                                        </use>
+                                    </svg>
                                     <div class="pros__description">Технология Fast Fuel</div>
                                 </li>
                             </ul>
@@ -87,29 +108,50 @@
                     <div class="benifits">
                         <ul class="benifits__list">
                             <li class="benifints__item">
-                                <div class="benifits__image-wrapper"><img src="./img/why/battery.svg" alt="battery"
-                                        class="benifints__image"></div>
-                                <h3 class="benifits__title">40 часов работы</h3>
-                                <div class="benifits__description">Наушники Beats Solo3 могут работать
-                                    до 40 часов без подзарядки, чтобы вы
-                                    могли пользоваться ими каждый день.</div>
+                                <div class="benifits__image-wrapper">
+                                    <svg class="benifints__image">
+                                        <use xlink:href="./img/sprite.svg#batteryBig">
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div class="benefits__text">
+                                    <h3 class="benifits__title">40 часов работы</h3>
+                                    <div class="benifits__description">Наушники Beats Solo3 могут работать
+                                        до 40 часов без подзарядки, чтобы вы
+                                        могли пользоваться ими каждый день.</div>
+                                </div>
+                                
                             </li>
                             <li class="benifints__item">
-                                <div class="benifits__image-wrapper"><img src="./img/why/sound.svg" alt="sound"
-                                        class="benifints__image"></div>
-                                <h3 class="benifits__title">Фирменное звучание</h3>
-                                <div class="benifits__description">Фирменное звучание Beats в наушниках
-                                    с технологией Bluetooth класса
-                                    1 будет сопровождать вас повсюду —
-                                    куда бы вы ни отправились.</div>
+                                <div class="benifits__image-wrapper">
+                                    <svg class="benifints__image">
+                                        <use xlink:href="./img/sprite.svg#sound">
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div class="benefits__text">
+                                    <h3 class="benifits__title">Фирменное звучание</h3>
+                                    <div class="benifits__description">Фирменное звучание Beats в наушниках
+                                        с технологией Bluetooth класса
+                                        1 будет сопровождать вас повсюду —
+                                        куда бы вы ни отправились.
+                                    </div>
+                                </div>
                             </li>
                             <li class="benifints__item">
-                                <div class="benifits__image-wrapper"><img src="./img/why/time.svg" alt="time"
-                                        class="benifints__image"></div>
-                                <h3 class="benifits__title">Быстрая зарядка</h3>
-                                <div class="benifits__description">Благодаря технологии Fast Fuel
-                                    всего через 5 минут зарядки вы
-                                    сможете слушать музыку ещё 3 часа.</div>
+                                <div class="benifits__image-wrapper">
+                                    <svg class="benifints__image">
+                                        <use xlink:href="./img/sprite.svg#time">
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div class="benefits__text">
+                                    <h3 class="benifits__title">Быстрая зарядка</h3>
+                                    <div class="benifits__description">Благодаря технологии Fast Fuel
+                                        всего через 5 минут зарядки вы
+                                        сможете слушать музыку ещё 3 часа.
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -165,12 +207,12 @@
                                 </div>
                             </div>
                             <div class="form__row">
-                                <div class="form__item">
+                                <div class="form__item form__item--street">
                                     <div class="form__item__label">Улица</div>
                                     <input type="text" class="form__input form__input--long">
                                 </div>
                             </div>
-                            <div class="form__row">
+                            <div class="form__row form__row--house">
                                 <div class="form__item">
                                     <div class="form__item__label">Дом</div>
                                     <input type="text" class="form__input form-input--short">
@@ -190,7 +232,7 @@
                             </div>
                         </div>
                         <div class="form__column">
-                            <div class="form__item">
+                            <div class="form__item form__item--textarea">
                                 <div class="form__item__label">Комментарий</div>
                                 <textarea class="form__input form__input--textarea">
                                 </textarea>
@@ -223,7 +265,51 @@
                     </form>
                 </div>
             </section>
+            <!--Тут будет карта-->
+            <section class="map">
+                <div class="map__image">
 
+                </div>
+            </section>
+            </section>
+            <footer class="footer">
+
+                <div class="container">
+                    <div class="footer__contacts">
+                        <div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div>
+                        <address class="contacts">
+                            <a href="tel:+78007003030" class="contacts__phone contacts__phone--red">
+                                <svg class="contacts__image contacts__image--red">
+                                    <use xlink:href="./img/sprite.svg#phone">
+                                    </use>
+                                </svg>8 800 700 30 30</a>
+                        </address>
+                    </div>
+                    <ul class="socials">
+                        <li class="socials__item socials__item--icon--vk">
+                            <a href="" class="socials__link">
+                                <svg class="socials__img">
+                                    <use xlink:href="./img/sprite.svg#vk">
+                                    </use>
+                                </svg></a></li>
+                        <li class="socials__item socials__item--icon--facebook"><a href="" class="socials__link"><svg
+                                    class="socials__img">
+                                    <use xlink:href="./img/sprite.svg#f">
+                                    </use>
+                                </svg></a></li>
+                        <li class="socials__item socials__item--icon--instagram"><a href="" class="socials__link"><svg
+                                    class="socials__img">
+                                    <use xlink:href="./img/sprite.svg#in">
+                                    </use>
+                                </svg></a></li>
+                        <li class="socials__item socials__item--icon--telegram"><a href="" class="socials__link"><svg
+                                    class="socials__img">
+                                    <use xlink:href="./img/sprite.svg#tv">
+                                    </use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
     </div>
     <nav class="fixed-menu">

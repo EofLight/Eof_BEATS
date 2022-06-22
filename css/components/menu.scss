@@ -1,8 +1,15 @@
+.menu{
+    margin: 0 30px;
+    padding-top: 7px;
+    @include tablets{
+        display: none;
+    }
+}
 .menu__list {
     display: flex;
-    margin-right: 3.024rem;
-    justify-content: space-between;
-    margin-top: 0.126rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .menu__item {
@@ -17,4 +24,7 @@
     &:last-child {
         margin-right: 0;
     }
+}
+.menu__link{
+    white-space: nowrap;
 }

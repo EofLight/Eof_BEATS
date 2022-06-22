@@ -1,29 +1,71 @@
 .form {
     display: flex;
     justify-items: center;
-
+    padding: 0rem 5.103rem;
+    @include tablets {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    @include phones {
+        
+        padding: 0;
+    }
 }
 
 .form__column {
     flex: 1;
+    @include tablets {
+        margin-right: 0;
+        width: 68%;
+    }
+    @include phones{
+       
+        width: 100%;
+    }
 }
 
 .form__row {
     display: flex;
-    margin-bottom: 0.882rem;
+    margin-bottom: 2rem;
+    @include tablets {
+        justify-content: space-between;
+    }
+    @include phones{
+       
+        justify-content: space-between;
+
+    }
+}
+.form__row--house{
+    .form__item{
+        @include tablets{
+            width: 23%;
+        }
+        @include phones{
+            width: 23%;
+        }
+    }
 }
 
 .form__btns {
     display: flex;
+    @include tablets{
+        justify-content: center;
+    }
+    @include phones{
+       
+        justify-content: center;
+    }
 }
 
 .form__input {
     flex: 1;
-    margin-right: 0.819rem;
+    //margin-right: 0.819rem;
     border-radius: 0.252rem;
     border: none;
     background: #fff;
-    width: 14.112rem;
+    width: 90%;
     height: 3.717rem;
     font-size: 1.134rem;
     color: #202123;
@@ -32,30 +74,102 @@
         outline: none;
         border: 0.189rem solid #E01F3D;
     }
+
+    @include tablets {
+        width: 100%;
+        height: 70%;
+        margin:0;
+    }
+    @include phones{
+       
+        width: 100%;
+        margin:0;
+        
+    }
 }
 
+.form__item{
+    @include tablets{
+       
+        width: 48%;
+    }
+    @include phones{
+       
+        width: 48%;
+    }
 
+}
 .form__item__label {
     margin-bottom: 0.378rem;
 }
 
-.form__input--long {
-    width: 28.98rem;
+.form__item--street{
+    @include tablets{
+        width: 100%;
+    }
+    @include phones{
+        width: 100%;
+    }
 }
 
 .form-input--short {
     margin-right: 0.756rem;
     width: 6.678rem;
+    @include tablets{
+        width: 100%;
+        padding-right: rem(10px);
+    }
+    @include phones{
+        width: 100%;
+        padding-right: rem(10px);
+    }
 }
 
 .form__input--textarea {
-    width: 28.35rem;
+    max-width: 28.35rem;
+    width: 100%;
     height: 9.954rem;
     margin-bottom: 2.268rem;
+    @include tablets{
+        max-width: 100%;
+        width: 100%;
+        height: rem(83px);
+        margin-bottom: rem(13px);
+    }
+    @include phones{
+        max-width: 100%;
+        width: 100%;
+    
+}
+    
+}
+.form__item--textarea{
+        width: 100%;
+
+        @include phones{
+            width: 100%;
+        
+    }
 }
 
 .form__column {
     margin-right: 1.638rem;
+    width: rem(450px);
+    @include tablets{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       padding: 0 rem(11px);
+        margin: 0;
+    }
+    @include phones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       padding: 0 rem(11px);
+        margin: 0;
+    }
 }
 
 .controls__list {
@@ -67,6 +181,13 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 2.772rem;
+    @include tablets{
+        margin-bottom: rem(22px)
+    }
+    @include phones{
+       
+        align-items: center;
+    }
 }
 
 .controls__item {
@@ -119,7 +240,7 @@
     opacity: 0;
 
     &:checked+.form__item__label--checkbox::before {
-        background: url(../img/checkmark.svg) center no-repeat, #ffffff;
+        background: url(.././img/checkmark.svg) center no-repeat, #ffffff;
 
     }
 }
@@ -157,4 +278,8 @@
     line-height: 1.197rem;
     text-transform: none;
     padding: 0rem 0.945rem;
+    @include tablets{
+        color:#E01F3D;
+    }
+
 }

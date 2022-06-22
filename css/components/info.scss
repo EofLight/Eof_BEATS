@@ -1,0 +1,19 @@
+.info {
+    background: url(../img/map.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+}
+
+.info.section{
+
+        height: 100%;
+    
+}

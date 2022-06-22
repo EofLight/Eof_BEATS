@@ -3,6 +3,9 @@
     top: 40%;
     right: 3%;
     z-index: $z-index-fixed-menu;
+    @include tablets{
+        display: none;
+    }
 }
 .fixed-menu__item{
     margin-bottom:0.315rem;
