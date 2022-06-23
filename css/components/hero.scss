@@ -14,74 +14,75 @@
         
     }
     }
-}
-.hero__title {
-    width: 35%;
-    margin-bottom: 1.386rem;
-    @include tablets{
-        margin-bottom: 1%;
-        width: 100%;
-    }
-    @include phones{
-        font-size: 2rem;
-        line-height: 2.25rem;
-        width: 60%;
-        margin-bottom: 0.87rem;
-    }
-} 
 
-.hero__subtitle {
-    font-family: 'Alegreya Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: rem(21px);
-    line-height: rem(25px);
-    margin-bottom: 2.268rem;
-    width: 35%;
-    @include tablets{
-        margin-bottom: rem(25px);
-        width: 50%;
-    }
-    @include phones{
-        font-size: 1.125rem;
-        line-height: 1.25rem;
-        width: 65%;
-    }
+    &__title {
+        width: 35%;
+        margin-bottom: 1.386rem;
+        @include tablets{
+            margin-bottom: 1%;
+            width: 100%;
+        }
+        @include phones{
+            font-size: 2rem;
+            line-height: 2.25rem;
+            width: 60%;
+            margin-bottom: 0.87rem;
+        }
+    } 
 
-}
-
-.hero__text-section {
+    &__subtitle {
+        font-family: 'Alegreya Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(21px);
+        line-height: rem(25px);
+        margin-bottom: 2.268rem;
+        width: 35%;
+        @include tablets{
+            margin-bottom: rem(25px);
+            width: 50%;
+        }
+        @include phones{
+            font-size: 1.125rem;
+            line-height: 1.25rem;
+            width: 65%;
+        }
     
-    position: relative;
-    width: 100%;
-    margin-bottom: 4.536rem;
-    @include tablets{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
-}
 
-.hero__image {
-    position: absolute;
-    width: 31.374rem;
-    height: 31.374rem;
+    &__text-section {
     
-    background: url(.././img/headphones.png) center top 0.063rem no-repeat, #FFFFFF;
-    
-    background-size: 97%;
-    border-radius: 50%;
-    z-index: -100;
-    right: -1.37rem;
-    top: -4rem;
-    @include tablets{
         position: relative;
-        right: 0%;
-        top: 0%;
-        width: rem(330px);
-            height: rem(330px);
-            margin-bottom: 10%;
-            order: -1;
+        width: 100%;
+        margin-bottom: 4.536rem;
+        @include tablets{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        width: 31.374rem;
+        height: 31.374rem;
+        
+        background: url(.././img/headphones.png) center top 0.063rem no-repeat, #FFFFFF;
+        
+        background-size: 97%;
+        border-radius: 50%;
+        z-index: -100;
+        right: -1.37rem;
+        top: -4rem;
+        @include tablets{
+            position: relative;
+            right: 0%;
+            top: 0%;
+            width: rem(330px);
+                height: rem(330px);
+                margin-bottom: 10%;
+                order: -1;
+        }
     }
 }

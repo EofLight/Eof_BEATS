@@ -1,29 +1,31 @@
-.pros__lits {
-    display: flex;
-    height: 100%;
-}
-.pros__item {
-    display: flex;
-    margin-right: 1.386rem;
-    &:last-child {
-        margin-right: 0;
-    }
-}
 .pros {
     display: flex;
     align-items: center;
-}
-.pros__description {
-    width: 6.3rem;
-    line-height: 1.134rem;
-}
-.pros__image {
-    margin-right: 1.134rem;
-    width: 2.583rem;
-    height: 2.583rem;
-}
 
-.pros{
+    &__lits {
+        display: flex;
+        height: 100%;
+    }
+
+    &__item {
+        display: flex;
+        margin-right: 1.386rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__description {
+        width: 6.3rem;
+        line-height: 1.134rem;
+    }
+
+    &__image {
+        margin-right: 1.134rem;
+        width: 2.583rem;
+        height: 2.583rem;
+    }
+
     @include tablets{
         display: none;
     }

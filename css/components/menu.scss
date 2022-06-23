@@ -4,27 +4,29 @@
     @include tablets{
         display: none;
     }
-}
-.menu__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 
-}
-
-.menu__item {
-    display: inline-block;
-    margin-right: 1.701rem;
-    vertical-align: middle;
-    font-family: 'Alegreya Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.134rem;
-    line-height: 1.89rem;
-    &:last-child {
-        margin-right: 0;
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    
     }
-}
-.menu__link{
-    white-space: nowrap;
+
+    &__item {
+        display: inline-block;
+        margin-right: 1.701rem;
+        vertical-align: middle;
+        font-family: 'Alegreya Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.134rem;
+        line-height: 1.89rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link{
+        white-space: nowrap;
+    }
 }

@@ -12,12 +12,13 @@
             padding: 0;
         }
     }
-}
-.main__title--delivery {
-    margin-bottom: 3.843rem;
-    text-align: center;
-    color: #FFFFFF;
-    @include tablets{
-        margin-bottom: rem(32px);
+
+    &__main-title{
+        margin-bottom: 3.843rem;
+        text-align: center;
+        color: #FFFFFF;
+        @include tablets{
+            margin-bottom: rem(32px);
+        }
     }
 }

@@ -4,14 +4,35 @@
     font-style: normal;
     font-weight: 400;
     font-size: 1.134rem;
-    .contacts__phone{
+    &__phone{
         display: flex;
         white-space: nowrap;
     }
-    .contacts__image {
+    
+    &__image {
         flex-shrink: 0;
         width: 1.008rem;
         margin-right: 0.378rem;
+    }
+
+    &__image--red {
+        @include tablets{
+            fill: #E01F3D;
+        }
+        @include phones {
+            fill: black;
+        }
+        width: rem(12px);
+        height: rem(12px);
+    }
+
+    &__phone--red {
+        @include tablets{
+            color: #E01F3D;
+        }
+        @include phones{
+            color: black;
+        }
     }
 }
 .header__contacts{
@@ -20,24 +41,6 @@
     }
     .contacts__image{
         height: 14px;
-    }
-}
-.contacts__image--red {
-    @include tablets{
-        fill: #E01F3D;
-    }
-    @include phones {
-        fill: black;
-    }
-    width: rem(12px);
-    height: rem(12px);
-}
-.contacts__phone--red {
-    @include tablets{
-        color: #E01F3D;
-    }
-    @include phones{
-        color: black;
     }
 }
 

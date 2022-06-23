@@ -1,13 +1,17 @@
 .reviews{
 
-        background: #FFF;
-        .container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
+    background: #FFF;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__pager-list {
+        display: flex;
+    }
 
 }
 
@@ -33,15 +37,75 @@
         text-align: center;
     }
     
-}
+    &__content {
+        flex: 2;
+        padding: 4.725rem 6.615rem 1.575rem 0rem;
+        display: flex;
+        flex-direction: column;
+        @include tablets{
+            padding: 0;
+        }
+    }
 
-.review__content {
-    flex: 2;
-    padding: 4.725rem 6.615rem 1.575rem 0rem;
-    display: flex;
-    flex-direction: column;
-    @include tablets{
-        padding: 0;
+    &__title {
+        font-weight: 700;
+        font-size: 1.512rem;
+        line-height: 1.764rem;
+        margin-bottom: 1.89rem;
+        @include tablets{
+            margin-bottom: 0;
+        }
+        
+    }
+
+    &__content-text {
+        max-width: 100%;
+        color: $gray;
+        margin-bottom: 2.394rem;
+        @include tablets{
+            padding: rem(16px) rem(24px);
+            margin-bottom: 0;
+        }
+    }
+
+    &__username {
+        font-weight: 700;
+        font-size: 1.134rem;
+        line-height: 1.323rem;
+        @include tablets{
+            margin-bottom: rem(30px);
+            font-family: 'Play';
+            font-style: normal;
+            font-weight: 400;
+            font-size: rem(18px);
+            line-height: rem(24px);
+        }
+    }
+
+    &__pager-item{
+        margin-right: 0.441rem;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__pager-image {
+        height: 4.662rem;
+        width: 4.662rem;
+        border-radius: 50%;
+        overflow: hidden;
+        @include phones{
+            height: rem(64px);
+            width: rem(64px);
+        }
+        
+    }
+
+    &__pager-item--active {
+        .review__pager-image{
+            border: 0.252rem solid #E01F3D;
+        }
+        
     }
 }
 
@@ -68,68 +132,4 @@
             width: 30%;
         }
     }
-}
-
-.review__title {
-    font-weight: 700;
-    font-size: 1.512rem;
-    line-height: 1.764rem;
-    margin-bottom: 1.89rem;
-    @include tablets{
-        margin-bottom: 0;
-    }
-    
-}
-
-.review__content-text {
-    max-width: 100%;
-    color: $gray;
-    margin-bottom: 2.394rem;
-    @include tablets{
-        padding: rem(16px) rem(24px);
-        margin-bottom: 0;
-    }
-}
-
-
-.review__username {
-    font-weight: 700;
-    font-size: 1.134rem;
-    line-height: 1.323rem;
-    @include tablets{
-        margin-bottom: rem(30px);
-        font-family: 'Play';
-        font-style: normal;
-        font-weight: 400;
-        font-size: rem(18px);
-        line-height: rem(24px);
-    }
-}
-.reviews__pager-list {
-    display: flex;
-}
-
-.review__pager-item{
-    margin-right: 0.441rem;
-    &:last-child{
-        margin-right: 0;
-    }
-}
-
-.review__pager-image {
-    height: 4.662rem;
-    width: 4.662rem;
-    border-radius: 50%;
-    overflow: hidden;
-    @include phones{
-        height: rem(64px);
-        width: rem(64px);
-    }
-    
-}
-.review__pager-item--active {
-    .review__pager-image{
-        border: 0.252rem solid #E01F3D;
-    }
-    
 }

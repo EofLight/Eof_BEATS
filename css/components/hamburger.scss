@@ -7,10 +7,11 @@
     @include tablets{
         display: inline-flex;
     }
-}
-.hamburger__plank{
-    display: block;
-    background:$black;
-    height: 4px;
-    border-radius: 10px;
+
+    &__plank{
+        display: block;
+        background:$black;
+        height: 4px;
+        border-radius: 10px;
+    }
 }
