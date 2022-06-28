@@ -303,6 +303,41 @@ img {
 .menu__link {
   white-space: nowrap;
 }
+.menu-vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  height: 100%;
+}
+.menu-vertical .menu__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+.menu-vertical .menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 18.75rem;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 72px;
+}
 
 .pros {
   display: -webkit-box;
@@ -1275,4 +1310,168 @@ img {
   height: 100%;
   background: url("../img/map.svg") center center no-repeat;
   background-size: cover;
+}
+
+.shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F8FAF9;
+}
+.shop .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1030px;
+}
+.shop__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4.125rem 0;
+}
+.shop__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.shop__func {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 91px;
+  height: 91px;
+  background: #9A9A9A;
+  border-radius: 4px;
+  margin-bottom: 1.5625rem;
+}
+.shop__func-image {
+  display: block;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  fill: #fff;
+}
+.shop__pager {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.shop__pager--left {
+  margin-right: 2.0625rem;
+}
+.shop__pager--right {
+  position: relative;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-right: 2.0625rem;
+}
+.shop__pager-img {
+  fill: #000;
+  width: 0.875rem;
+  height: 1.6875rem;
+}
+.shop__title {
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  margin-bottom: 1.5rem;
+}
+.shop__text {
+  color: #666666;
+  width: 80%;
+  margin-bottom: 1.6875rem;
+}
+.shop__main-image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: block;
+  width: 28.25rem;
+  height: 28.25rem;
+  border-radius: 50%;
+  background: url("../../img/shop_headphones.png") left 2.5rem top 3.75rem no-repeat, #FFFFFF;
+  background-size: 80%;
+  margin-right: 3.75rem;
+}
+.shop__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.shop__price {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 3.75rem;
+  margin-right: 0.9375rem;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 2.875rem;
+}
+.feature__title {
+  color: #666666;
+  margin-bottom: 0.0625rem;
+}
+.feature__item {
+  margin-right: 5.625rem;
+}
+.feature__text {
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+}
+
+.fullscreen-menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #666666;
+  position: fixed;
+  z-index: 200;
+}
+.fullscreen-menu__close {
+  position: absolute;
+  right: 2.625rem;
+  top: 2.625rem;
+  fill: #FFF;
+}
+.fullscreen-menu__close-image {
+  width: 1.25rem;
+  height: 1.25rem;
 }

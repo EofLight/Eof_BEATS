@@ -1,0 +1,113 @@
+.shop{
+    display: flex;
+    align-items: center;
+    background: #F8FAF9;
+    .container{
+        display: flex;
+        max-width:$containerWidth + 90px ;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        padding: rem(66px) 0;
+    }
+    &__desc{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    &__func{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 91px;
+        height: 91px;
+        background: #9A9A9A;
+        border-radius: 4px;
+        margin-bottom: rem(25px);
+        &-image{
+            display: block;
+            width: rem(45px);
+            height: rem(45px);
+            flex-shrink: 0;
+            fill: #fff;
+        }
+        
+    }
+    &__pager{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &--left{
+            margin-right: rem(33px);
+        }
+        &--right{
+            position: relative;
+    
+            transform: rotate(180deg);
+            margin-right: rem(33px);
+        }
+    }
+    &__pager-img{
+        fill: #000;
+        width: rem(14px);
+        height: rem(27px);
+    }
+    
+    &__title{
+        font-size: rem(36px);
+        line-height: rem(42px);
+        margin-bottom: rem(24px);
+    }
+    &__text{
+        color: #666666;
+        width: 80%;
+        margin-bottom: rem(27px);
+    }
+    &__main-image{
+        flex-shrink: 0;
+        display: block;
+        width: rem(452px);
+        height: rem(452px);
+        border-radius: 50%;
+        background: url('../../img/shop_headphones.png')left rem(40px) top rem(60px) no-repeat, #FFFFFF;
+        background-size: 80%;
+        margin-right: rem(60px);
+    }
+    &__buy{
+        display: flex;
+    }
+    &__price{
+        white-space: nowrap;
+        display: flex;
+        font-family: 'Play';
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(36px);
+        line-height: rem(60px);
+        margin-right: rem(15px);
+    }
+    
+}
+.feature{
+    display: flex;
+    width: 100%;
+    &__title{
+        color: #666666;
+        margin-bottom: rem(1px);
+    }
+    &__item{
+        margin-right: rem(90px);
+    }
+    &__text{
+        font-family: 'Play';
+        font-style: normal;
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(21px);
+    }
+    margin-bottom: rem(46px);
+
+}
+

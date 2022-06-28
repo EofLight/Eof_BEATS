@@ -55,7 +55,7 @@
                                 </svg>
                                 8 800 700 30 30</a>
                         </address>
-                        <a href="" class="hamburger">
+                        <a href="" class="hamburger" id="hamburger">
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
@@ -100,6 +100,7 @@
 
                 </div>
             </section>
+
             <section class="why section">
                 <div class="container">
                     <h1 class="why__main-title">почему beats solo 3?</h1>
@@ -157,6 +158,64 @@
                     </div>
                 </div>
             </section>
+
+            <section class="shop section">
+                <div class="container">
+                    <div class="shop__pager shop__pager--left">
+                        <svg class="shop__pager-img">
+                            <use xlink:href="./img/sprite.svg#pager"></use>
+                        </svg>
+                    </div>
+                    <div class="shop__content">
+                        <div class="shop__main-image">
+                            
+                        </div>
+                        <div class="shop__desc">
+                            <button class="shop__func">
+                                <svg class="shop__func-image">
+                                    <use xlink:href="./img/sprite.svg#shop"></use>
+                                </svg>
+                            </button>
+                            <h1 class="shop__title">beats solo 3. цвет «атласное серебро»  </h1>
+                            <div class="shop__desc-content">
+                                <div class="shop__text">
+                                    Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
+                                </div>
+                                <ul class="shop__features-list feature">
+                                    <li class="feature__item">
+                                        <div class="feature__title">
+                                            Зарядка
+                                        </div>
+                                        <div class="feature__text">
+                                            2 часа
+                                        </div>
+                                    </li>
+                                    <li class="feature__item">
+                                        <div class="feature__title">
+                                            Вес
+                                        </div>
+                                        <div class="feature__text">
+                                            215 грамм
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="shop__buy">
+                                    <div class="shop__price">
+                                        14 990 ₽
+                                    </div>
+                                    <a href="#" class="btn">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__pager shop__pager--right">
+                        <svg class="shop__pager-img">
+                            <use xlink:href="./img/sprite.svg#pager"></use>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
             <section class="reviews section">
                 <div class="container">
                     <h1 class="main__title main__title--reviews">отзывы</h1>
@@ -191,6 +250,9 @@
                     </div>
                 </div>
             </section>
+
+            
+
             <section class="delivery section">
                 <div class="container">
                     <h1 class="delivery__main-title ">закажите доставку</h1>
@@ -325,6 +387,40 @@
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
+    <div class="fullscreen-menu active" id="fmenu">
+        <div class="fullscreen-menu__close" id="fmenu__close">
+            <svg class="fullscreen-menu__close-image">
+                <use xlink:href="./img/sprite.svg#close">
+                </use>
+            </svg>
+        </div>
+        <nav class="menu menu-vertical">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item ">
+                    <a href="#" class="menu__link">Наушники</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Команда</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Цвета</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Как мы работаем</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
