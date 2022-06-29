@@ -5,16 +5,42 @@
     .container{
         display: flex;
         max-width:$containerWidth + 90px ;
+        width: 100%;
     }
     &__content{
         display: flex;
         align-items: center;
         padding: rem(66px) 0;
+        @include tablets{
+            flex-direction: column;
+        }
     }
     &__desc{
         
         display: flex;
         flex-direction: column;
+        width: 100%;
+        @include tablets{
+            
+            align-items: center;
+            text-align: center;
+        
+        }
+        &-content{
+            @include tablets{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        
+            }
+        }
+    }
+    &__features-list{
+        @include tablets{
+            display: flex;
+            justify-content: center;
+            
+        }
     }
     &__func{
         display: flex;
@@ -32,6 +58,9 @@
             flex-shrink: 0;
             fill: #fff;
         }
+        @include tablets{
+            display: none;
+        }
         
     }
     &__pager{
@@ -41,12 +70,28 @@
         cursor: pointer;
         &--left{
             margin-right: rem(33px);
+            @include tablets{
+                position: relative;
+                right: 75%;
+
+            }
         }
         &--right{
             position: relative;
     
             transform: rotate(180deg);
             margin-right: rem(33px);
+            @include tablets{
+                position: relative;
+                left: 71%;
+
+            }
+            
+        }
+        @include tablets{
+            position: absolute;
+            top: rem(220px);
+        
         }
     }
     &__pager-img{
@@ -59,6 +104,11 @@
         font-size: rem(36px);
         line-height: rem(42px);
         margin-bottom: rem(24px);
+        @include tablets{
+            font-size: 28px;
+            line-height: 32px;
+        
+        }
     }
     &__text{
         color: #666666;
@@ -74,9 +124,17 @@
         background: url('../../img/shop_headphones.png')left rem(40px) top rem(60px) no-repeat, #FFFFFF;
         background-size: 80%;
         margin-right: rem(60px);
+        @include tablets{
+            background-position: 30px;
+            width: rem(306px);
+            height: rem(306px);
+            margin-bottom: rem(50px);
+
+        }
     }
     &__buy{
         display: flex;
+
     }
     &__price{
         white-space: nowrap;
@@ -87,6 +145,10 @@
         font-size: rem(36px);
         line-height: rem(60px);
         margin-right: rem(15px);
+        @include tablets{
+            margin-right: rem(30px);
+        
+        }
     }
     
 }
@@ -99,6 +161,11 @@
     }
     &__item{
         margin-right: rem(90px);
+        @include tablets{
+            text-align: start;
+            margin-left: rem(30px);
+            margin-right: rem(50px);
+        }
     }
     &__text{
         font-family: 'Play';
