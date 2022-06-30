@@ -1,0 +1,44 @@
+  .specs__list {
+    padding: 28px 25px 24px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  .specs__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .spec__icon-wrapper {
+    width: rem(32px);
+    height: rem(32px);
+    margin-right: rem(12px);
+    position: relative;
+  
+  
+  }
+  
+  .specs__icon {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .specs__name {
+    width: 127px;
+  }
+  
+  .specs__value {
+    width: 53px;
+    text-align: right;
+  }

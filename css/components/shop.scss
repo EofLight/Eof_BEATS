@@ -16,7 +16,7 @@
         }
     }
     &__desc{
-        
+        position: relative;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -63,6 +63,21 @@
         }
         
     }
+    &__specs {
+        background: rgba(0, 0, 0, 0.06);
+        box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+        backdrop-filter: blur(40px);
+        width: 273px;
+        height: 294px;
+        display: block;
+        border-radius: 4px;
+        position: absolute;
+        opacity: 0;
+        top: -999999px;
+        left: 91px;
+        transition: opacity .6s;
+      
+      }
     &__pager{
         display: flex;
         justify-content: center;
@@ -72,7 +87,13 @@
             margin-right: rem(33px);
             @include tablets{
                 position: relative;
-                right: 75%;
+                right: 80%;
+
+            }
+            @include phones{
+                
+                right: 95%;
+                margin-right: 0;
 
             }
         }
@@ -83,7 +104,13 @@
             margin-right: rem(33px);
             @include tablets{
                 position: relative;
-                left: 71%;
+                left: 84%;
+
+            }
+            @include phones{
+                
+                left: 95%;
+                margin-right: 0;
 
             }
             
@@ -109,17 +136,23 @@
             line-height: 32px;
         
         }
+        @include phones{
+            width: rem(416px);
+        
+        }
     }
     &__text{
         color: #666666;
         width: 80%;
         margin-bottom: rem(27px);
+        
     }
     &__main-image{
         flex-shrink: 0;
         display: block;
         width: rem(452px);
         height: rem(452px);
+    
         border-radius: 50%;
         background: url('../../img/shop_headphones.png')left rem(40px) top rem(60px) no-repeat, #FFFFFF;
         background-size: 80%;
@@ -129,6 +162,7 @@
             width: rem(306px);
             height: rem(306px);
             margin-bottom: rem(50px);
+            margin-right: 0px;
 
         }
     }
