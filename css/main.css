@@ -1175,14 +1175,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-.footer__contacts > .contacts__phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
 .footer__address {
   font-family: "Play";
   font-style: normal;
@@ -1541,7 +1533,7 @@ img {
   width: 28.25rem;
   height: 28.25rem;
   border-radius: 50%;
-  background: url("../../img/shop_headphones.png") left 2.5rem top 3.75rem no-repeat, #FFFFFF;
+  background: url("../img/shop_headphones.png") left 2.5rem top 3.75rem no-repeat, #FFFFFF;
   background-size: 80%;
   margin-right: 3.75rem;
 }
