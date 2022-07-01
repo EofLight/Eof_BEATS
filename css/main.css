@@ -379,9 +379,10 @@ img {
 
 .btn {
   display: inline-block;
+  text-align: center;
   background: #E01F3D;
   color: #ffffff;
-  padding: 16px 41px;
+  padding: 18px 41px;
   border-radius: 100px;
   font-weight: 700;
   text-decoration: none;
@@ -1169,6 +1170,19 @@ img {
           flex-direction: column;
   justify-items: center;
 }
+.footer__contacts__phone {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__contacts > .contacts__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
 .footer__address {
   font-family: "Play";
   font-style: normal;
@@ -1215,6 +1229,15 @@ img {
 }
 .footer .container__contacts .contacts__phone {
   padding: 0;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.contacts__phone--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;

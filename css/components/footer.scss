@@ -1,11 +1,22 @@
+
 .footer{
 
     &__contacts{
         display: flex;
         flex-direction: column;
         justify-items: center;
+        &__phone{
+            align-items: center;
+            
+        }
+        & > .contacts{
+            &__phone{            
+                display: flex;
+                align-items: baseline;
+            }
+        }
     }
-
+    
     &__address {
         font-family: 'Play';
         font-style: normal;
@@ -42,4 +53,8 @@
             }
         }
     }
+}
+.contacts__phone--footer{
+    display: flex;
+    align-items: baseline;
 }
