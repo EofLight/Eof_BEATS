@@ -1533,7 +1533,7 @@ img {
   width: 28.25rem;
   height: 28.25rem;
   border-radius: 50%;
-  background: url("../img/shop_headphones.png") left 2.5rem top 3.75rem no-repeat, #FFFFFF;
+  background: url("./img/shop_headphones.png") left 2.5rem top 3.75rem no-repeat, #FFFFFF;
   background-size: 80%;
   margin-right: 3.75rem;
 }
