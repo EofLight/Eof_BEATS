@@ -640,6 +640,13 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+.reviews__list {
+  min-height: 282px;
+}
+.reviews__pager {
+  position: relative;
+  z-index: 10;
+}
 
 .main__title--reviews {
   position: relative;
@@ -653,27 +660,10 @@ img {
 }
 
 .review {
-  background: #F8FAF9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 1.26rem;
-}
-@media screen and (max-width: 768px) {
-  .review {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
+  position: absolute;
+  opacity: 0;
+  -webkit-transform: opacity 0.4s;
+          transform: opacity 0.4s;
 }
 .review__content {
   -webkit-box-flex: 2;
@@ -736,6 +726,9 @@ img {
 .review__pager-item:last-child {
   margin-right: 0;
 }
+.review__pager-item.active .review__pager-image {
+  border: 0.252rem solid #E01F3D;
+}
 .review__pager-image {
   height: 4.662rem;
   width: 4.662rem;
@@ -748,8 +741,36 @@ img {
     width: 4rem;
   }
 }
-.review__pager-item--active .review__pager-image {
-  border: 0.252rem solid #E01F3D;
+.review__pager-link {
+  cursor: pointer;
+}
+
+.review.active {
+  position: relative;
+  opacity: 1;
+  background: #F8FAF9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.26rem;
+  -webkit-transform: opacity 0.4s;
+          transform: opacity 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .review.active {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
 }
 
 .avatar {
@@ -1671,4 +1692,117 @@ img {
 .specs__value {
   width: 53px;
   text-align: right;
+}
+
+.team {
+  background-color: #FFF;
+}
+.team .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+.team__member {
+  overflow: hidden;
+  width: 13.75rem;
+  height: 18.125rem;
+  margin-bottom: 1.5625rem;
+}
+.team__member:last-child {
+  margin-right: 0px;
+}
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.team__title {
+  background-color: #FFF;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #292929;
+  margin-bottom: 0.6875rem;
+}
+.team__title::after {
+  content: "";
+}
+.team__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 1.25rem;
+  position: relative;
+}
+.team__content {
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  height: 0%;
+}
+.team__content-role {
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 4px;
+}
+.team__content-desc {
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}
+.team__content.active {
+  height: 100%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3.3125rem;
+}
+
+.team__list--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .team__list--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .team__list--desktop {
+    display: none;
+  }
+
+  .team__content.active {
+    height: 100%;
+  }
 }

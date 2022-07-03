@@ -13,6 +13,14 @@
         display: flex;
     }
 
+    &__list{
+        min-height: 282px;
+    }
+    &__pager{
+        position: relative;
+        z-index: 10;
+    }
+
 }
 
 .main__title--reviews {
@@ -24,19 +32,10 @@
         line-height: rem(36px);
     }
 }
-
-.review {
-    background: #F8FAF9;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 1.26rem;
-    @include tablets{
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-    
+.review{ 
+    position: absolute;
+    opacity: 0;
+    transform:opacity .4s;
     &__content {
         flex: 2;
         padding: 4.725rem 6.615rem 1.575rem 0rem;
@@ -88,6 +87,13 @@
             margin-right: 0;
         }
     }
+    &__pager-item.active {
+        .review__pager-image{
+            border: 0.252rem solid #E01F3D;
+        }
+        
+       
+    }
 
     &__pager-image {
         height: 4.662rem;
@@ -100,14 +106,30 @@
         }
         
     }
-
-    &__pager-item--active {
-        .review__pager-image{
-            border: 0.252rem solid #E01F3D;
-        }
-        
+    &__pager-link{
+        cursor: pointer;
+            
     }
 }
+.review.active{ 
+    
+    position: relative;
+    opacity: 1;
+    background: #F8FAF9;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1.26rem;
+    @include tablets{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    transform: opacity .4s;
+    
+    
+}
+
 
 .avatar {
     font-family: 'Play';
