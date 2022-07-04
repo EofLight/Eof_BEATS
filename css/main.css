@@ -1194,6 +1194,10 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.25rem;
 }
 .footer__contacts__phone {
   -webkit-box-align: center;
