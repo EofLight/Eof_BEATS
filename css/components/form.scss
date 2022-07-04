@@ -30,7 +30,13 @@
             outline: none;
             border: rem(3px) solid #E01F3D;
         }
+        &.active{
+            outline: none;
+            border: rem(3px) solid #a3182d;
+        }
     }
+
+
 
     &__column:nth-child(2)>.form__item {
         width: 98%;
@@ -139,8 +145,6 @@
     }
 }
 
-
-.controls
 
 .controls {
     display: flex;

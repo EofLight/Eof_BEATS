@@ -1,11 +1,16 @@
 .team{
-    background-color: #FFF;
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
+    display: flex;
+        justify-content: space-between;
+    &__section{
+        background-color: #FFF;
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
     }
+    
     &__member{
         overflow: hidden;
         width: rem(220px);
@@ -16,11 +21,10 @@
         }
        
     }
-    &__list{
-        display: flex;
-        justify-content: space-between;
-    }
     &__title{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
         background-color: #FFF;
         font-family: 'Play';
         font-style: normal;
@@ -29,10 +33,19 @@
         line-height: 21px;
         color: #292929;
         margin-bottom: rem(11px);
-        &::after{
-            content: "";
-
+        &-arrow{
+            position: relative;
+            transform: scaleY(1);
+            margin-left: 5px;
+            width:9px ;
+            height: 9px;
+            fill: #365A49;
+            transition: .4s;
+            &.active{
+                transform: scaleY(-1);
+            }
         }
+        
         
     }
     
@@ -41,6 +54,7 @@
         flex-direction: column;
         margin-right: rem(20px);
         position: relative;
+        width: 100%;
     }
 
     &__content{
@@ -49,6 +63,7 @@
         position: absolute;
         top:100%;
         height: 0%;
+        transition: height .5s;
         &-role{
             font-family: 'Play';
             font-style: normal;
@@ -66,6 +81,7 @@
             color: #666666;
         }
         &.active{
+            transition: height .5s;
             height: 100%;
         }
     }
@@ -83,17 +99,60 @@
 
 @include tablets{
 
-.team__list--mobile{
-    display: flex;
-    flex-direction: column;
-}
-.team__list--desktop{
-    display: none;
-}
-.team__content.active{
-    height: 100% ;
-}
+    .team{
+        &__list--mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        &__list--desktop{
+            display: none;
+        }
+        &__content{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top:0;
+                left: 0;
+                justify-content: center;
+                align-items: center;
+                text-align: center;  
+                max-width: rem(220px);  
+                height: 0;  
+            &.active{
+                height: 100%;
+            }
+            &-role{
+                font-family: 'Play';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+        &__item{
+            
+            margin-bottom: rem(20px);
+            align-items: center;
+            margin-right: 0px;
+        }
+        &__title{
+            font-family: 'Alegreya Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: rem(21.0181px);
+            line-height: rem(25px);
+        }
 
 
+    }
 
+    
+}
+
+@include phones{
+    .team__title-arrow{
+        fill: #E01F3D;
+    }
 }

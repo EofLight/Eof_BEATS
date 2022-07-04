@@ -882,6 +882,10 @@ img {
   outline: none;
   border: 0.1875rem solid #E01F3D;
 }
+.form__input.active {
+  outline: none;
+  border: 0.1875rem solid #a3182d;
+}
 .form__column:nth-child(2) > .form__item {
   width: 98%;
 }
@@ -988,7 +992,7 @@ img {
   padding: 1.25rem 2.5rem;
 }
 
-.controls .controls {
+.controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -998,36 +1002,36 @@ img {
           flex-direction: column;
   margin-bottom: 2.75rem;
 }
-.controls .controls__list {
+.controls__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1rem;
 }
-.controls .controls__item {
+.controls__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 1.5rem;
 }
-.controls .controls__radio {
+.controls__radio {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.controls .controls__radio:checked + .form__item__label--radio::before {
+.controls__radio:checked + .form__item__label--radio::before {
   outline: none;
   background: #E01F3D;
   border: 0.375rem solid #ffffff;
   width: 0.8125rem;
   height: 0.8125rem;
 }
-.controls .controls__checkbox {
+.controls__checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.controls .controls__checkbox:checked + .form__item__label--checkbox::before {
+.controls__checkbox:checked + .form__item__label--checkbox::before {
   background: url(../img/checkmark.svg) center no-repeat, #ffffff;
 }
 
@@ -1483,11 +1487,12 @@ img {
   cursor: pointer;
 }
 .shop__pager--left {
+  position: relative;
   margin-right: 2.0625rem;
 }
 @media screen and (max-width: 768px) {
   .shop__pager--left {
-    position: relative;
+    height: 50%;
     right: 80%;
   }
 }
@@ -1505,7 +1510,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .shop__pager--right {
-    position: relative;
+    height: 50%;
     left: 84%;
   }
 }
@@ -1518,7 +1523,7 @@ img {
 @media screen and (max-width: 768px) {
   .shop__pager {
     position: absolute;
-    top: 13.75rem;
+    z-index: 2;
   }
 }
 .shop__pager-img {
@@ -1560,6 +1565,26 @@ img {
 }
 @media screen and (max-width: 768px) {
   .shop__main-image {
+    background-position: 30px;
+    width: 19.125rem;
+    height: 19.125rem;
+    margin-bottom: 3.125rem;
+    margin-right: 0px;
+  }
+}
+.shop__main-image--red {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: block;
+  width: 28.25rem;
+  height: 28.25rem;
+  border-radius: 50%;
+  background: url(.././img/shop_headphones_red.png) left 2.5rem top 3.75rem no-repeat, #FFFFFF;
+  background-size: 80%;
+  margin-right: 3.75rem;
+}
+@media screen and (max-width: 768px) {
+  .shop__main-image--red {
     background-position: 30px;
     width: 19.125rem;
     height: 19.125rem;
@@ -1617,6 +1642,13 @@ img {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.3125rem;
+}
+
+.bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .fullscreen-menu {
@@ -1695,9 +1727,17 @@ img {
 }
 
 .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.team__section {
   background-color: #FFF;
 }
-.team .container {
+.team__section .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1719,15 +1759,16 @@ img {
 .team__member:last-child {
   margin-right: 0px;
 }
-.team__list {
+.team__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.team__title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   background-color: #FFF;
   font-family: "Play";
   font-style: normal;
@@ -1737,8 +1778,20 @@ img {
   color: #292929;
   margin-bottom: 0.6875rem;
 }
-.team__title::after {
-  content: "";
+.team__title-arrow {
+  position: relative;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  margin-left: 5px;
+  width: 9px;
+  height: 9px;
+  fill: #365A49;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.team__title-arrow.active {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
 }
 .team__item {
   display: -webkit-box;
@@ -1750,6 +1803,7 @@ img {
           flex-direction: column;
   margin-right: 1.25rem;
   position: relative;
+  width: 100%;
 }
 .team__content {
   overflow: hidden;
@@ -1757,6 +1811,8 @@ img {
   position: absolute;
   top: 100%;
   height: 0%;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
 }
 .team__content-role {
   font-family: "Play";
@@ -1775,6 +1831,8 @@ img {
   color: #666666;
 }
 .team__content.active {
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
   height: 100%;
 }
 
@@ -1796,13 +1854,114 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .team__list--desktop {
     display: none;
   }
-
+  .team__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    max-width: 13.75rem;
+    height: 0;
+  }
   .team__content.active {
     height: 100%;
   }
+  .team__content-role {
+    font-family: "Play";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .team__item {
+    margin-bottom: 1.25rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0px;
+  }
+  .team__title {
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.31363125rem;
+    line-height: 1.5625rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__title-arrow {
+    fill: #E01F3D;
+  }
+}
+.modal {
+  background-color: rgba(48, 48, 48, 0.5);
+  display: none;
+  position: fixed;
+  top: 0;
+}
+.modal__container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal.error-modal .modal__content {
+  text-align: center;
+  color: red;
+}
+.modal__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 19.3125rem;
+  height: 11rem;
+  background-color: #FFF;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.btn-close {
+  margin-top: 1.125rem;
 }

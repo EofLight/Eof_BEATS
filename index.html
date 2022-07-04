@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eof_Beats</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -166,107 +170,210 @@
                             <use xlink:href="./img/sprite.svg#pager"></use>
                         </svg>
                     </a>
-                    <div class="shop__content">
-                        <div class="shop__main-image"> 
-                        </div>
-                        <div class="shop__desc">
-                            <div class="shop__func">
-                                <svg class="shop__func-image">
-                                    <use xlink:href="./img/sprite.svg#shop"></use>
-                                </svg>
+                    <ul class="slider">
+                        <li class="shop__content">
+                            <div class="shop__main-image"> 
                             </div>
-                            <div class="shop__specs">
-                                <ul class="specs__list">
-                                    <li class="specs__item">
-
-                                        <div class="spec__icon-wrapper">
-                                            <svg class="specs__icon">
-                                                <use xlink:href="./img/sprite.svg#bluetooth">
-                                                </use>
-                                            </svg>
-                                        </div>
-                                        <div class="specs__name">Bluetooth</div>
-                                        <div class="specs__value">4.0</div>
-                                    </li>
-                                    <li class="specs__item">
-
-                                        <div class="spec__icon-wrapper">
-                                            <svg class="specs__icon">
-                                                <use xlink:href="./img/sprite.svg#road">
-                                                </use>
-                                            </svg>
-                                        </div>
-                                        <div class="specs__name">Дальность </div>
-                                        <div class="specs__value">12 м</div>
-                                    </li>
-                                    <li class="specs__item">
-
-                                        <div class="spec__icon-wrapper">
-                                            <svg class="specs__icon">
-                                                <use xlink:href="./img/sprite.svg#charger">
-                                                </use>
-                                            </svg>
-                                        </div>
-                                        <div class="specs__name">Зарядка</div>
-                                        <div class="specs__value">3 ч</div>
-                                    </li>
-                                    <li class="specs__item">
-
-                                        <div class="spec__icon-wrapper">
-                                            <svg class="specs__icon">
-                                                <use xlink:href="./img/sprite.svg#kg">
-                                                </use>
-                                            </svg>
-                                        </div>
-                                        <div class="specs__name">Вес</div>
-                                        <div class="specs__value">215гр</div>
-                                    </li>
-                                    <li class="specs__item">
-
-                                        <div class="spec__icon-wrapper">
-                                            <svg class="specs__icon">
-                                                <use xlink:href="./img/sprite.svg#patent">
-                                                </use>
-                                            </svg>
-                                        </div>
-                                        <div class="specs__name">Гарантия</div>
-                                        <div class="specs__value">1 год</div>
-                                    </li>
-                                </ul>
-                                
-                            </div>
-                            <h1 class="shop__title">beats solo 3. цвет «атласное серебро»  </h1>
-                            <div class="shop__desc-content">
-                                <div class="shop__text">
-                                    Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
+                            <div class="shop__desc">
+                                <div class="shop__func">
+                                    <svg class="shop__func-image">
+                                        <use xlink:href="./img/sprite.svg#shop"></use>
+                                    </svg>
                                 </div>
-                                <ul class="shop__features-list feature">
-                                    <li class="feature__item">
-                                        <div class="feature__title">
-                                            Зарядка
-                                        </div>
-                                        <div class="feature__text">
-                                            2 часа
-                                        </div>
-                                    </li>
-                                    <li class="feature__item">
-                                        <div class="feature__title">
-                                            Вес
-                                        </div>
-                                        <div class="feature__text">
-                                            215 грамм
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="shop__buy">
-                                    <div class="shop__price">
-                                        14 990 ₽
+                                <div class="shop__specs">
+                                    <ul class="specs__list">
+                                        <li class="specs__item">
+
+                                            <div class="spec__icon-wrapper">
+                                                <svg class="specs__icon">
+                                                    <use xlink:href="./img/sprite.svg#bluetooth">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="specs__name">Bluetooth</div>
+                                            <div class="specs__value">4.0</div>
+                                        </li>
+                                        <li class="specs__item">
+
+                                            <div class="spec__icon-wrapper">
+                                                <svg class="specs__icon">
+                                                    <use xlink:href="./img/sprite.svg#road">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="specs__name">Дальность </div>
+                                            <div class="specs__value">12 м</div>
+                                        </li>
+                                        <li class="specs__item">
+
+                                            <div class="spec__icon-wrapper">
+                                                <svg class="specs__icon">
+                                                    <use xlink:href="./img/sprite.svg#charger">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="specs__name">Зарядка</div>
+                                            <div class="specs__value">3 ч</div>
+                                        </li>
+                                        <li class="specs__item">
+
+                                            <div class="spec__icon-wrapper">
+                                                <svg class="specs__icon">
+                                                    <use xlink:href="./img/sprite.svg#kg">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="specs__name">Вес</div>
+                                            <div class="specs__value">215гр</div>
+                                        </li>
+                                        <li class="specs__item">
+
+                                            <div class="spec__icon-wrapper">
+                                                <svg class="specs__icon">
+                                                    <use xlink:href="./img/sprite.svg#patent">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="specs__name">Гарантия</div>
+                                            <div class="specs__value">1 год</div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <h1 class="shop__title">beats solo 3. цвет «атласное серебро»  </h1>
+                                <div class="shop__desc-content">
+                                    <div class="shop__text">
+                                        Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
                                     </div>
-                                    <a href="#" class="btn">Заказать</a>
+                                    <ul class="shop__features-list feature">
+                                        <li class="feature__item">
+                                            <div class="feature__title">
+                                                Зарядка
+                                            </div>
+                                            <div class="feature__text">
+                                                2 часа
+                                            </div>
+                                        </li>
+                                        <li class="feature__item">
+                                            <div class="feature__title">
+                                                Вес
+                                            </div>
+                                            <div class="feature__text">
+                                                215 грамм
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="shop__buy">
+                                        <div class="shop__price">
+                                            14 990 ₽
+                                        </div>
+                                        <a href="#" class="btn">Заказать</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="shop__content">
+                            <div class="shop__main-image shop__main-image--red"> 
+                            </div>
+                            <div class="shop__desc">
+                                <div class="shop__func">
+                                    <svg class="shop__func-image">
+                                        <use xlink:href="./img/sprite.svg#shop"></use>
+                                    </svg>
+                                </div>
+                                <div class="shop__specs">
+                                    <ul class="specs__list">
+                                        <li class="specs__item">
+
+                                            <div class="spec__icon-wrapper">
+                                                <svg class="specs__icon">
+                                                    <use xlink:href="./img/sprite.svg#bluetooth">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="specs__name">Bluetooth</div>
+                                            <div class="specs__value">4.0</div>
+                                        </li>
+                                        <li class="specs__item">
+
+                                            <div class="spec__icon-wrapper">
+                                                <svg class="specs__icon">
+                                                    <use xlink:href="./img/sprite.svg#road">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="specs__name">Дальность </div>
+                                            <div class="specs__value">12 м</div>
+                                        </li>
+                                        <li class="specs__item">
+
+                                            <div class="spec__icon-wrapper">
+                                                <svg class="specs__icon">
+                                                    <use xlink:href="./img/sprite.svg#charger">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="specs__name">Зарядка</div>
+                                            <div class="specs__value">3 ч</div>
+                                        </li>
+                                        <li class="specs__item">
+
+                                            <div class="spec__icon-wrapper">
+                                                <svg class="specs__icon">
+                                                    <use xlink:href="./img/sprite.svg#kg">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="specs__name">Вес</div>
+                                            <div class="specs__value">215гр</div>
+                                        </li>
+                                        <li class="specs__item">
+
+                                            <div class="spec__icon-wrapper">
+                                                <svg class="specs__icon">
+                                                    <use xlink:href="./img/sprite.svg#patent">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="specs__name">Гарантия</div>
+                                            <div class="specs__value">1 год</div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <h1 class="shop__title">beats solo pro. цвет «красный цитрус»</h1>
+                                <div class="shop__desc-content">
+                                    <div class="shop__text">
+                                        Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.
+                                    </div>
+                                    <ul class="shop__features-list feature">
+                                        <li class="feature__item">
+                                            <div class="feature__title">
+                                                Зарядка
+                                            </div>
+                                            <div class="feature__text">
+                                                2 часа
+                                            </div>
+                                        </li>
+                                        <li class="feature__item">
+                                            <div class="feature__title">
+                                                Вес
+                                            </div>
+                                            <div class="feature__text">
+                                                215 грамм
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="shop__buy">
+                                        <div class="shop__price">
+                                            14 990 ₽
+                                        </div>
+                                        <a href="#" class="btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                     <a class="shop__pager shop__pager--right">
                         <svg class="shop__pager-img">
                             <use xlink:href="./img/sprite.svg#pager"></use>
@@ -275,18 +382,21 @@
                 </div>
             </section>
 
-            <section class="team section">
+            <section class="team__section section">
                 <div class="container">
                     <h1 class="section-title">команда</h1>
-                    <ul class="team__list team__list--desktop">
+                    <ul class="team team__list--desktop">
                         <li class="team__item">
                             <div class="team__member">
                                 <img src="./img/team/boris.png" alt="" class="team__member-image">
                             </div>
                             <button class="team__title" type="button">
                                 Борис Федорович
+                                <svg class="team__title-arrow">
+                                    <use xlink:href="./img/sprite.svg#team-arrow"></use>
+                                </svg>
                             </button>
-                            <div class="team__content active">
+                            <div class="team__content">
                                 <div class="team__content-block">
                                     <div class="team__content-role">
                                         Главный технолог
@@ -303,6 +413,9 @@
                             </div>
                             <button class="team__title" type="button">
                                 Алла Иванова
+                                <svg class="team__title-arrow">
+                                    <use xlink:href="./img/sprite.svg#team-arrow"></use>
+                                </svg>
                             </button>
                             <div class="team__content">
                                 <div class="team__content-block">
@@ -321,6 +434,9 @@
                             </div>
                             <button class="team__title" type="button">
                                 Мила Рыжкова
+                                <svg class="team__title-arrow">
+                                    <use xlink:href="./img/sprite.svg#team-arrow"></use>
+                                </svg>
                             </button>
                             <div class="team__content">
                                 <div class="team__content-block">
@@ -339,6 +455,9 @@
                             </div>
                             <button class="team__title" type="button">
                                 Кирилл Матросов
+                                <svg class="team__title-arrow">
+                                    <use xlink:href="./img/sprite.svg#team-arrow"></use>
+                                </svg>
                             </button>
                             <div class="team__content">
                                 <div class="team__content-block">
@@ -353,16 +472,20 @@
                         </li>
                     </ul>
                     <!--Mobile-->
-                    <ul class="team__list team__list--mobile">
+                    <ul class="team team__list--mobile">
                         <li class="team__item">
                             <button class="team__title" type="button">
                                 Борис Федорович
+                                <svg class="team__title-arrow">
+                                    <use xlink:href="./img/sprite.svg#team-arrow"></use>
+                                </svg>
                             </button>
-                            <div class="team__content active">
-                                <div class="team__member">
-                                    <img src="./img/team/boris.png" alt="" class="team__member-image">
-                                </div>
+                            <div class="team__content">
+                                
                                 <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/team/boris.png" alt="" class="team__member-image">
+                                    </div>
                                     <div class="team__content-role">
                                         Главный технолог
                                     </div>
@@ -376,12 +499,16 @@
                             
                             <button class="team__title" type="button">
                                 Алла Иванова
+                                <svg class="team__title-arrow">
+                                    <use xlink:href="./img/sprite.svg#team-arrow"></use>
+                                </svg>
                             </button>
                             <div class="team__content">
-                                <div class="team__member">
-                                    <img src="./img/team/alla.png" alt="" class="team__member-image">
-                                </div>
+                                
                                 <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/team/alla.png" alt="" class="team__member-image">
+                                    </div>
                                     <div class="team__content-role">
                                         Специалист по упаковке
                                     </div>
@@ -395,12 +522,16 @@
                             
                             <button class="team__title" type="button">
                                 Мила Рыжкова
+                                <svg class="team__title-arrow">
+                                    <use xlink:href="./img/sprite.svg#team-arrow"></use>
+                                </svg>
                             </button>
                             <div class="team__content">
-                                <div class="team__member">
-                                    <img src="./img/team/mila.png" alt="" class="team__member-image">
-                                </div>
+                                
                                 <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/team/mila.png" alt="" class="team__member-image">
+                                    </div>
                                     <div class="team__content-role">
                                         PR, маркетинг
                                     </div>
@@ -413,12 +544,16 @@
                         <li class="team__item">
                             <button class="team__title" type="button">
                                 Кирилл Матросов
+                                <svg class="team__title-arrow">
+                                    <use xlink:href="./img/sprite.svg#team-arrow"></use>
+                                </svg>
                             </button>
                             <div class="team__content">
-                                <div class="team__member">
-                                    <img src="./img/team/kirill.png" alt="" class="team__member-image">
-                                </div>
+                                
                                 <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/team/kirill.png" alt="" class="team__member-image">
+                                    </div>
                                     <div class="team__content-role">
                                         Оператор
                                     </div>
@@ -499,15 +634,16 @@
                 <div class="container">
                     <h1 class="delivery__main-title ">закажите доставку</h1>
                     <form class="form">
+                        <input type="hidden" name="to" value="somewhere@mail.com">
                         <div class="form__column">
                             <div class="form__row">
                                 <div class="form__item">
                                     <div class="form__item__label">Имя</div>
-                                    <input type="text" class="form__input form__input--normal">
+                                    <input type="text" class="form__input form__input--normal" name="name">
                                 </div>
                                 <div class="form__item">
                                     <div class="form__item__label">Телефон</div>
-                                    <input type="text" class="form__input form__input--normal">
+                                    <input type="text" class="form__input form__input--normal" name="phone">
                                 </div>
                             </div>
                             <div class="form__row">
@@ -538,7 +674,7 @@
                         <div class="form__column">
                             <div class="form__item">
                                 <div class="form__item__label">Комментарий</div>
-                                <textarea class="form__input form__input--textarea">
+                                <textarea class="form__input form__input--textarea" name="comment">
                                 </textarea>
                             </div>
                             <div class="controls">
@@ -637,7 +773,7 @@
                 </use>
             </svg>
         </div>
-        <nav class="menu menu-vertical">
+        <nav class="menu--full menu-vertical">
             <ul class="menu__list">
                 <li class="menu__item">
                     <a href="#" class="menu__link">О нас</a>
@@ -663,9 +799,28 @@
             </ul>
         </nav>
     </div>
+
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__content-wrapper">
+                <div class="modal__content">
+                    Cообщение отправлено
+                </div>
+                <button class="btn btn-close">
+                    закрыть
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/revPager.js"></script>
+    <script src="./scripts/teamDesc.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <script src="./scripts/modal.js"></script>
 </body>
 
 </html>

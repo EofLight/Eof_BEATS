@@ -12,22 +12,37 @@ fullscreenMenu.querySelector('#fmenu__close').addEventListener('click', function
     fullscreenMenu.style.display='none';
 })
 
-const gearButton = document.querySelector(".shop__func");
-const specsListElement = document.querySelector(".shop__specs");
-gearButton.addEventListener("mouseover", e => {
-  specsListElement.style.opacity = "1";
-  specsListElement.style.top = "0";
+const specbutton = $(".shop__func");
+const specBlock = $(".shop__specs");
+
+specbutton.hover(function () {
+    const set = $(this).siblings(".shop__specs").css({
+      "opacity":"1",
+      "top":"0"
+    });
+    
+    
+  }, function () {
+    const set = $(this).siblings(".shop__specs").css({
+      "opacity":"0",
+      "top":"-99999px"
+    });
+    
+  }
+);
+
+specBlock.hover(function () {
+  const set = $(this).css({
+    "opacity":"1",
+    "top":"0"
+  });
   
-})
-gearButton.addEventListener("mouseout", e => {
-  specsListElement.style.opacity = "0"
-  specsListElement.style.top = "-999999px"
-})
-specsListElement.addEventListener("mouseover", e => {
-  specsListElement.style.opacity = "1";
-  specsListElement.style.top = "0";
-})
-specsListElement.addEventListener("mouseout", e => {
-  specsListElement.style.opacity = "0"
-  specsListElement.style.top = "-999999px"
-})
+  
+}, function () {
+  const set = $(this).css({
+    "opacity":"0",
+    "top":"-99999px"
+  });
+  
+}
+);

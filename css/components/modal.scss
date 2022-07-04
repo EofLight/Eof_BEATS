@@ -1,0 +1,38 @@
+.modal{
+    background-color: rgba(48, 48, 48,.5);
+    display: none;
+    position: fixed;
+    top:0;
+    &__container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &.error-modal{
+        .modal__content{
+            text-align: center;
+            color:red;
+        }
+    }
+
+    &__content-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: rem(309px);
+        height: rem(176px);
+        background-color: #FFF;
+        font-family: 'Play';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+.btn-close{
+    margin-top: rem(18px);
+}

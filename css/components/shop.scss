@@ -84,9 +84,10 @@
         align-items: center;
         cursor: pointer;
         &--left{
+            position: relative;
             margin-right: rem(33px);
             @include tablets{
-                position: relative;
+                height: 50%;
                 right: 80%;
 
             }
@@ -99,11 +100,11 @@
         }
         &--right{
             position: relative;
-    
             transform: rotate(180deg);
             margin-right: rem(33px);
             @include tablets{
-                position: relative;
+                height: 50%;
+                
                 left: 84%;
 
             }
@@ -117,7 +118,8 @@
         }
         @include tablets{
             position: absolute;
-            top: rem(220px);
+            z-index: 2;
+            //top: rem(220px);
         
         }
     }
@@ -165,6 +167,26 @@
             margin-right: 0px;
 
         }
+        &--red{
+            flex-shrink: 0;
+        display: block;
+        width: rem(452px);
+        height: rem(452px);
+    
+        border-radius: 50%;
+        background: url(.././img/shop_headphones_red.png)left rem(40px) top rem(60px) no-repeat, #FFFFFF;
+        background-size: 80%;
+        margin-right: rem(60px);
+        @include tablets{
+            background-position: 30px;
+            width: rem(306px);
+            height: rem(306px);
+            margin-bottom: rem(50px);
+            margin-right: 0px;
+
+        }
+            
+        }
     }
     &__buy{
         display: flex;
@@ -211,4 +233,12 @@
     margin-bottom: rem(46px);
 
 }
+
+
+    .bx-wrapper{
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
 

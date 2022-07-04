@@ -133,4 +133,9 @@
     <path d="M2.81415 15.0056H9.65442V16.4119H2.81415V15.0056Z" fill="black"></path>
     <path d="M2.81415 12.1908H9.65442V13.597H2.81415V12.1908Z" fill="black"></path>
   </symbol>
+
+  <symbol width="9" height="7" viewBox="0 0 9 7" xmlns="http://www.w3.org/2000/svg" id="team-arrow">
+<path d="M4.5 7L0.602887 0.249999L8.39711 0.25L4.5 7Z"/>
+</symbol>
+
 </svg>
