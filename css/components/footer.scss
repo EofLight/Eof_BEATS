@@ -5,7 +5,9 @@
         display: flex;
         flex-direction: column;
         justify-items: center;
-        align-items: center;
+        @include tablets{
+            align-items: center;
+        }
         margin-bottom: rem(20px);
         &__phone{
             align-items: center;
