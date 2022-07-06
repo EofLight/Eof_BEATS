@@ -1,0 +1,26 @@
+{
+  "name": "eof_beats",
+  "version": "1.0.0",
+  "description": "eofbeats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EofLight/Eof_BEATS.git"
+  },
+  "author": "Eof_Light",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EofLight/Eof_BEATS/issues"
+  },
+  "homepage": "https://github.com/EofLight/Eof_BEATS#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "jquery-ui": "^1.13.1"
+  }
+}
