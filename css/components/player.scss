@@ -62,14 +62,14 @@
         align-items: center;
         margin-left: 5%;
         margin-right: 3%;
-        background: url(../../img/player/play.svg) no-repeat;
+        background: url(.././img/player/play.svg) no-repeat;
         width: 1.25rem;
         height: 1.25rem;
         margin-top: 7px;
         cursor: pointer;
        
         &.active{
-            background: url(../../img/player/pause.svg) no-repeat;
+            background: url(.././img/player/pause.svg) no-repeat;
             
         }
 
@@ -86,7 +86,7 @@
         cursor: pointer;
         width: rem(662px);
         height: rem(392px);
-        background: url(../../img/player/player_bg.png) top left no-repeat;
+        background: url(.././img/player/player_bg.png) top left no-repeat;
         background-size: 100% 100%;
 
         &-icon{
