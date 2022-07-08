@@ -29,8 +29,8 @@
         font-family: 'Play';
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
+        font-size: rem(18px);
+        line-height: rem(21px);
         color: #292929;
         margin-bottom: rem(11px);
         &-arrow{
@@ -68,16 +68,16 @@
             font-family: 'Play';
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: rem(16px);
+            line-height: rem(19px);
             margin-bottom: 4px;
         }
         &-desc{
             font-family: 'Play';
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: rem(16px);
+            line-height: rem(19px);
             color: #666666;
         }
         &.active{
@@ -127,8 +127,8 @@
                 font-family: 'Play';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 18px;
-                line-height: 21px;
+                font-size: rem(18px);
+                line-height: rem(21px);
             }
         }
         &__item{

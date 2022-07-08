@@ -1,6 +1,19 @@
 
 .player{
-    
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width: rem(662px);
+    height: rem(392px);
+    @include tablets{
+        width: rem(594px);
+        height: rem(352px);
+    }
+    @include phones{
+        width: rem(395px);
+        height: rem(234px);
+    }
     position: relative;
     &-media{
         display: flex;
@@ -16,19 +29,22 @@
     &-container{
         
         max-width: 662px;
+        min-width: 333px;
     }
-    display: flex;
-        justify-content: center;
-        align-items: center;
-    display: block;
-    width: rem(662px);
-    
-    height: rem(392px);
+   
     &__controls{
         display: flex;
         justify-content: start;
+        align-items: center;
         height: rem(35px);
         width: rem(662px);
+        @include tablets{
+        width: rem(594px);
+    }
+    @include phones{
+        width: rem(395px);
+        min-width: rem(395px);
+    }
         background-color: #151515;
         position: absolute;
         bottom: 0;
@@ -51,7 +67,7 @@
     &__icon{
         display: flex;
         align-items: center;
-        margin-right: 10px;
+        margin-right: rem(10px);
         &-img{
             width: 1.25rem;
             height: 1.25rem;
@@ -59,18 +75,20 @@
     }
     &__start{
         display: flex;
+        flex-shrink: 0;
         align-items: center;
         margin-left: 5%;
         margin-right: 3%;
         background: url(.././img/player/play.svg) no-repeat;
+        background-size: 70%;
         width: 1.25rem;
         height: 1.25rem;
-        margin-top: 7px;
+        //margin-top: rem(7px);
         cursor: pointer;
        
         &.active{
             background: url(.././img/player/pause.svg) no-repeat;
-            
+            background-size: 70%;
         }
 
     }
@@ -86,6 +104,14 @@
         cursor: pointer;
         width: rem(662px);
         height: rem(392px);
+        @include tablets{
+            width: rem(594px);
+            height: rem(352px);
+        }
+        @include phones{
+            width: rem(395px);
+            height: rem(234px);
+        }
         background: url(.././img/player/player_bg.png) top left no-repeat;
         background-size: 100% 100%;
 
@@ -96,6 +122,10 @@
             height: 71px;
             top:40%;
             left:45%;
+            @include phones{
+                top:30%;
+                
+            }
         }
         &.active{
             display: none;
@@ -104,6 +134,16 @@
     &__elem{
         width: rem(662px);
         height: rem(392px);
+        @include tablets{
+            width: rem(594px);
+            height: rem(352px);
+        }
+        @include phones{
+            width: rem(395px);
+            height: rem(234px);
+            min-width: rem(395px);
+            min-height: rem(234px);
+        }
     }
     
 }
@@ -113,24 +153,24 @@
     z-index: 2;
     border-radius:2px;
     background: #333333;
-    width: 100px;
+    width: rem(100px);
     height: 4px;
     cursor: pointer;
     .ui-slider-handle{
         position: absolute;
         z-index: 2;
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         background-color: #E01F3D;
-        top:33%;
-        margin-left: -5%;
+        top:24%;
+        margin-left: -6%;
     }
     .ui-slider-range {
         background: #E01F3D;
         position: absolute;
         border: 0;
-        top: 42%;
+        top: 35%;
         height: 4px;
         border-radius: 2px;
     }
@@ -142,17 +182,26 @@
     flex-shrink: 0;
     border-radius:2px;
     background: #333333;
-    width: 442px;
+    width: rem(442px);
+    @include tablets{
+        width: rem(350px);
+        
+    }
+    @include phones{
+
+        width: rem(200px);
+        
+    }
     height: 4px;
     >.ui-slider-handle{
         position: absolute;
         z-index: 2;
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         background-color: #E01F3D;
-        top:33%;
-        margin-left: -5px;
+        top:-60%;
+        margin-left: -6px;
     }
     >.ui-slider-range {
         background: #E01F3D;

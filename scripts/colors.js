@@ -13,6 +13,9 @@ $(".color__name").click(e=>{
     const $this=$(e.currentTarget);
     console.log($this);
 
+    const winWidth=$("window").width();
+    const needWidth=winWidth - $this.width() * 3;
+
     const curContent=$this.siblings(".colors__content");
     console.log(curContent);
 
@@ -20,14 +23,17 @@ $(".color__name").click(e=>{
     
     if(!curContent.hasClass("active")){
         curContent.addClass("active");
+        if(winWidth<768){
+            curContent.width(needWidth);
+        }
     } else{
         curContent.removeClass("active");
     }
-
+/*
     if(!$this.hasClass("active")){
         $this.addClass("active");
     } else{
         $this.removeClass("active");
     }
-
+*/
 })

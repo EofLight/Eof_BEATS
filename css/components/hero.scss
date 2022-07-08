@@ -43,6 +43,7 @@
             width: 50%;
         }
         @include phones{
+            margin-bottom: rem(20px);
             font-size: 1.125rem;
             line-height: 1.25rem;
             width: 65%;
@@ -60,6 +61,9 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+        }
+        @include phones{
+            margin-bottom: 0;
         }
     }
 
@@ -82,6 +86,15 @@
             width: rem(330px);
                 height: rem(330px);
                 margin-bottom: 10%;
+                order: -1;
+        }
+        @include phones{
+            position: relative;
+            right: 0%;
+            top: 0%;
+            width: rem(323px);
+                height: rem(323px);
+                margin-bottom: rem(30px);
                 order: -1;
         }
     }

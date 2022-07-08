@@ -2,11 +2,11 @@ html {
 	font-size: $baseFontSize;
 
 	@include tablets{
-		font-size: $baseFontSize - 1px;
+		font-size: 2.15vmin;
 	}
 
 	@include phones{
-		font-size: $baseFontSize - 2px;
+		font-size: 2.81666vmin;
 	}
 }
 
@@ -52,8 +52,8 @@ h6 {
 
 h1{
 	font-weight: 700;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: rem(48px);
+    line-height: rem(52px);
     text-transform: uppercase;
     color: $black;
 	@include phones{
@@ -63,15 +63,15 @@ h1{
 }
 h3{
 	font-weight: 700;
-	font-size: 24px;
-	line-height: 28px;
+	font-size: rem(24px);
+	line-height: rem(28px);
 }
 h4{
 	font-family: 'Alegreya Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 25px;
+    font-size: rem(21px);
+    line-height: rem(25px);
 }
 p {
 	margin: 0;
@@ -105,7 +105,7 @@ img {
 	max-width: $containerWidth;
 	width: 95%;
 	position: relative;
-	min-width: 320px;
+	min-width: rem(320px);
 	@include tablets{
 		max-width: rem(696px)+rem(20px);
 	}
