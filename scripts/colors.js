@@ -3,21 +3,22 @@
 function closeEvery(items,curItem)
 {
     items.not(curItem).removeClass("active");
+    items.not(curItem).width(0);
 }
 
 
 $(".color__name").click(e=>{
     const allContent=$(".colors__content");
-    console.log(allContent);
 
     const $this=$(e.currentTarget);
-    console.log($this);
+   
 
-    const winWidth=$("window").width();
-    const needWidth=winWidth - $this.width() * 3;
+    const winWidth=$(window).width();
+    const needWidth= winWidth - ($this.width() * 3);
+
 
     const curContent=$this.siblings(".colors__content");
-    console.log(curContent);
+    //console.log(curContent);
 
     closeEvery(allContent,curContent);
     
@@ -28,6 +29,7 @@ $(".color__name").click(e=>{
         }
     } else{
         curContent.removeClass("active");
+        curContent.width(0);
     }
 /*
     if(!$this.hasClass("active")){

@@ -12,7 +12,8 @@
     }
     @include phones{
         width: rem(395px);
-        height: rem(234px);
+        
+        height: 197px;
     }
     position: relative;
     &-media{
@@ -30,6 +31,7 @@
         
         max-width: 662px;
         min-width: 333px;
+        
     }
    
     &__controls{
@@ -43,7 +45,7 @@
     }
     @include phones{
         width: rem(395px);
-        min-width: rem(395px);
+        min-width: 333px;
     }
         background-color: #151515;
         position: absolute;
@@ -58,20 +60,27 @@
         position: relative;
         background: transparent;
         &-wrapper{
-            margin-left: 5%;
+            //margin-left: 1%;
             display: flex;
             justify-content: center;
         }
 
     }
     &__icon{
-        display: flex;
-        align-items: center;
+        display: block;
+        position: relative;
+        top: 15%;
         margin-right: rem(10px);
         &-img{
             width: 1.25rem;
             height: 1.25rem;
         }
+        @include phones{
+
+            width:10px;
+            height: 10px;
+        }
+
     }
     &__start{
         display: flex;
@@ -88,7 +97,7 @@
        
         &.active{
             background: url(.././img/player/pause.svg) no-repeat;
-            background-size: 70%;
+            background-size: 130%;
         }
 
     }
@@ -111,6 +120,8 @@
         @include phones{
             width: rem(395px);
             height: rem(234px);
+            min-width: 333px;
+            min-height: 197px;
         }
         background: url(.././img/player/player_bg.png) top left no-repeat;
         background-size: 100% 100%;
@@ -141,8 +152,8 @@
         @include phones{
             width: rem(395px);
             height: rem(234px);
-            min-width: rem(395px);
-            min-height: rem(234px);
+            min-width: 333px;
+            min-height: 197px;
         }
     }
     
@@ -163,14 +174,14 @@
         height: 10px;
         border-radius: 50%;
         background-color: #E01F3D;
-        top:24%;
-        margin-left: -6%;
+        top:-50%;
+        margin-left: -7%;
     }
     .ui-slider-range {
         background: #E01F3D;
         position: absolute;
         border: 0;
-        top: 35%;
+        top: 20%;
         height: 4px;
         border-radius: 2px;
     }
@@ -183,6 +194,7 @@
     border-radius:2px;
     background: #333333;
     width: rem(442px);
+    margin-right: rem(40px);
     @include tablets{
         width: rem(350px);
         
@@ -190,6 +202,7 @@
     @include phones{
 
         width: rem(200px);
+        min-width: 169px;
         
     }
     height: 4px;
@@ -207,7 +220,7 @@
         background: #E01F3D;
         position: absolute;
         border: 0;
-        top: 42%;
+        top: 30%;
         height: 4px;
         border-radius: 2px;
     }

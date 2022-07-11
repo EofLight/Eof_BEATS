@@ -2084,7 +2084,7 @@ img {
   }*/
 }
 .colors__content-block {
-  width: 400px;
+  width: 100%;
   padding: 5% 8%;
   font-family: "Alegreya Sans";
   font-style: normal;
@@ -2172,7 +2172,7 @@ img {
 @media screen and (max-width: 480px) {
   .player {
     width: 24.6875rem;
-    height: 14.625rem;
+    height: 197px;
   }
 }
 .player-media {
@@ -2229,7 +2229,7 @@ img {
 @media screen and (max-width: 480px) {
   .player__controls {
     width: 24.6875rem;
-    min-width: 24.6875rem;
+    min-width: 333px;
   }
 }
 .player__volume {
@@ -2245,7 +2245,6 @@ img {
   background: transparent;
 }
 .player__volume-wrapper {
-  margin-left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2254,17 +2253,20 @@ img {
           justify-content: center;
 }
 .player__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  position: relative;
+  top: 15%;
   margin-right: 0.625rem;
 }
 .player__icon-img {
   width: 1.25rem;
   height: 1.25rem;
+}
+@media screen and (max-width: 480px) {
+  .player__icon {
+    width: 10px;
+    height: 10px;
+  }
 }
 .player__start {
   display: -webkit-box;
@@ -2285,7 +2287,7 @@ img {
 }
 .player__start.active {
   background: url(.././img/player/pause.svg) no-repeat;
-  background-size: 70%;
+  background-size: 130%;
 }
 .player__wrapper {
   display: -webkit-box;
@@ -2317,6 +2319,8 @@ img {
   .player__splash {
     width: 24.6875rem;
     height: 14.625rem;
+    min-width: 333px;
+    min-height: 197px;
   }
 }
 .player__splash-icon {
@@ -2349,8 +2353,8 @@ img {
   .player__elem {
     width: 24.6875rem;
     height: 14.625rem;
-    min-width: 24.6875rem;
-    min-height: 14.625rem;
+    min-width: 333px;
+    min-height: 197px;
   }
 }
 
@@ -2369,14 +2373,14 @@ img {
   height: 10px;
   border-radius: 50%;
   background-color: #E01F3D;
-  top: 24%;
-  margin-left: -6%;
+  top: -50%;
+  margin-left: -7%;
 }
 .slider__volume .ui-slider-range {
   background: #E01F3D;
   position: absolute;
   border: 0;
-  top: 35%;
+  top: 20%;
   height: 4px;
   border-radius: 2px;
 }
@@ -2389,6 +2393,7 @@ img {
   border-radius: 2px;
   background: #333333;
   width: 27.625rem;
+  margin-right: 2.5rem;
   height: 4px;
 }
 @media screen and (max-width: 768px) {
@@ -2399,6 +2404,7 @@ img {
 @media screen and (max-width: 480px) {
   .player__slider-timing {
     width: 12.5rem;
+    min-width: 169px;
   }
 }
 .player__slider-timing > .ui-slider-handle {
@@ -2415,7 +2421,7 @@ img {
   background: #E01F3D;
   position: absolute;
   border: 0;
-  top: 42%;
+  top: 30%;
   height: 4px;
   border-radius: 2px;
 }
