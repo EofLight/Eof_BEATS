@@ -108,7 +108,7 @@ img {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   /*min-width: $containerWidth - 50px;*/
   overflow: hidden;
 }
@@ -124,6 +124,15 @@ img {
   .container {
     max-width: 44.75rem;
   }
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .hero .container {
@@ -1128,7 +1137,7 @@ img {
   }
 }
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 38.125rem;
 }
 
@@ -1176,6 +1185,19 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.fixed-menu--shadowed .fixed-menu__link::before {
+  content: "";
+  background: white;
+}
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link {
+  opacity: 1;
+  border: 0.063rem solid white;
+}
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link:before {
+  opacity: 1;
+  background: white;
 }
 
 .hamburger {
@@ -2052,7 +2074,7 @@ img {
 }
 .colors__content {
   position: relative;
-  width: 0;
+  width: 0px;
   overflow: hidden;
   background-color: rgba(89, 89, 89, 0.9);
   -webkit-backdrop-filter: blur(10px);
@@ -2084,8 +2106,8 @@ img {
   }*/
 }
 .colors__content-block {
-  width: 100%;
-  padding: 5% 8%;
+  width: 100px;
+  padding: 11px 17px;
   font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 400;

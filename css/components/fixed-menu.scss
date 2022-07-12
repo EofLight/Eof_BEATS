@@ -45,3 +45,28 @@
         }
     }
 }
+.fixed-menu{
+    &--shadowed{
+        .fixed-menu__link{
+            &::before{
+                content:"";
+                background: white;
+                
+            }
+        }
+        .fixed-menu__item--active{
+            .fixed-menu__link{
+                opacity: 1;
+                border:0.063rem solid white;
+                &:before{
+                    opacity: 1;
+                    background: white;
+                    
+                }
+            }
+
+    }
+    
+    
+}
+}

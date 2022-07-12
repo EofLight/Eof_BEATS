@@ -16,7 +16,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="hero section">
+            <section data-section-id="hero" data-sidemenu-theme="def" class="hero section">
                 <div class="container">
 
                     <header class="header">
@@ -29,25 +29,25 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">О нас</a>
+                                    <a href="#" data-scroll-to="why" class="menu__link">О нас</a>
                                 </li>
                                 <li class="menu__item ">
-                                    <a href="#" class="menu__link">Наушники</a>
+                                    <a href="#" data-scroll-to="shop" class="menu__link">Наушники</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Команда</a>
+                                    <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Цвета</a>
+                                    <a href="#" data-scroll-to="colors" class="menu__link">Цвета</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Отзывы</a>
+                                    <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Как мы работаем</a>
+                                    <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Контакты</a>
+                                    <a href="#" data-scroll-to="map" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -70,7 +70,7 @@
                             <h1 class="hero__title">Беспроводные наушники Beats Solo 3</h1>
                             <h4 class="hero__subtitle">Встречайте новую версию наушников
                                 из линейки Powerbeats.</h4>
-                            <a href="#" class="btn">Заказать</a>
+                            <a href="#" data-scroll-to="delivery" class="btn">Заказать</a>
                             <div class="hero__image">
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                 </div>
             </section>
 
-            <section class="why section">
+            <section data-section-id="why" data-sidemenu-theme="def" class="why section">
                 <div class="container">
                     <h1 class="why__main-title">почему beats solo 3?</h1>
                     <div class="why__subtitle">Процессор W1 работает невероятно эффективно и позволяет легко
@@ -163,7 +163,7 @@
                 </div>
             </section>
 
-            <section class="shop section">
+            <section data-section-id="shop" data-sidemenu-theme="def" class="shop section">
                 <div class="container">
                     <a class="shop__pager shop__pager--left">
                         <svg class="shop__pager-img">
@@ -382,7 +382,7 @@
                 </div>
             </section>
 
-            <section class="team__section section">
+            <section data-section-id="team" data-sidemenu-theme="def" class="team__section section">
                 <div class="container">
                     <h1 class="section-title">команда</h1>
                     <ul class="team team__list--desktop">
@@ -568,7 +568,7 @@
             </section>
 
 
-            <section class="colors section">
+            <section data-section-id="colors" data-sidemenu-theme="white" class="colors section">
                 
                 <!--<div class="container"> -->
                     <h1 class="colors__title">Цвета</h1>
@@ -624,7 +624,7 @@
             </section>
 
 
-            <section class="reviews section">
+            <section data-section-id="reviews" data-sidemenu-theme="def" class="reviews section">
                 <div class="container">
                     <h1 class="main__title main__title--reviews">отзывы</h1>
                     <ul clas="reviews_list">
@@ -688,7 +688,7 @@
             </section>
 
 
-            <section class="player-media section">
+            <section data-section-id="player" data-sidemenu-theme="def" class="player-media section">
 
                 <div class="container">
                     <h1 class="section-title">Как мы работаем</h1>
@@ -736,7 +736,7 @@
 
 
 
-            <section class="delivery section">
+            <section data-section-id="delivery" data-sidemenu-theme="white" class="delivery section">
                 <div class="container">
                     <h1 class="delivery__main-title ">закажите доставку</h1>
                     <form class="form">
@@ -811,7 +811,7 @@
                 </div>
             </section>
             
-            <section class="map section">
+            <section data-section-id="map" data-sidemenu-theme="def" class="map section">
                 <div class="map__image" id="map__image">
                 </div>
                 <footer class="footer">
@@ -852,59 +852,19 @@
                     </div>
                 </footer>
             </section>
-
-            <!-- </section>
-            <footer class="footer">
-
-                <div class="container">
-                    <div class="footer__contacts">
-                        <div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div>
-                        <address class="contacts">
-                            <a href="tel:+78007003030" class="contacts__phone contacts__phone--red contacts__phone--footer">
-                                <svg class="contacts__image contacts__image--red">
-                                    <use xlink:href="./img/sprite.svg#phone">
-                                    </use>
-                                </svg>8 800 700 30 30</a>
-                        </address>
-                    </div>
-                    <ul class="socials">
-                        <li class="socials__item socials__item--icon--vk">
-                            <a href="" class="socials__link">
-                                <svg class="socials__img">
-                                    <use xlink:href="./img/sprite.svg#vk">
-                                    </use>
-                                </svg></a></li>
-                        <li class="socials__item socials__item--icon--facebook"><a href="" class="socials__link"><svg
-                                    class="socials__img">
-                                    <use xlink:href="./img/sprite.svg#f">
-                                    </use>
-                                </svg></a></li>
-                        <li class="socials__item socials__item--icon--instagram"><a href="" class="socials__link"><svg
-                                    class="socials__img">
-                                    <use xlink:href="./img/sprite.svg#in">
-                                    </use>
-                                </svg></a></li>
-                        <li class="socials__item socials__item--icon--telegram"><a href="" class="socials__link"><svg
-                                    class="socials__img">
-                                    <use xlink:href="./img/sprite.svg#tv">
-                                    </use>
-                                </svg></a></li>
-                    </ul>
-                </div>
-            </footer> -->
         </div>
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item" data-sidemenu-theme="def" data-scroll-to="hero"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item fixed-menu__item--active " data-sidemenu-theme="def" data-scroll-to="why"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item" data-scroll-to="shop" data-sidemenu-theme="def"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item" data-scroll-to="team" data-sidemenu-theme="def"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item" data-scroll-to="colors" data-sidemenu-theme="white"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item" data-scroll-to="reviews" data-sidemenu-theme="def"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item" data-scroll-to="player" data-sidemenu-theme="def"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item" data-scroll-to="delivery" data-sidemenu-theme="white"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item" data-scroll-to="map" data-sidemenu-theme="def"><a href="" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
     <div class="fullscreen-menu active" id="fmenu">
@@ -960,6 +920,8 @@
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/revPager.js"></script>
     <script src="./scripts/teamDesc.js"></script>
@@ -968,6 +930,7 @@
     <script src="./scripts/colors.js"></script>
     <script src="./scripts/player.js"></script>
     <script src="./scripts/map.js"></script>
+    <script src="./scripts/ops.js"></script>
 </body>
 
 </html>
