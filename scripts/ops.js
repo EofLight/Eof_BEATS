@@ -1,3 +1,4 @@
+
 const sections = $(".section");
 const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
