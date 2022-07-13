@@ -1,0 +1,271 @@
+.shop{
+    display: flex;
+    align-items: center;
+    background: #F8FAF9;
+    .container{
+        display: flex;
+        max-width:rem($containerWidth + 90px) ;
+        width: 100%;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        padding: rem(66px) 0;
+        height: 100%;
+        @include tablets{
+            flex-direction: column;
+        }
+        @include phones{
+            padding: rem(2px);
+        }
+
+    }
+    &__desc{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        //height: 100vh;
+        @include tablets{
+            
+            align-items: center;
+            text-align: center;
+        
+        }
+        &-content{
+            @include tablets{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        
+            }
+            @include phones{
+                //margin-bottom: rem(20px);
+            }
+        }
+    }
+    &__features-list{
+        @include tablets{
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+    &__func{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem(91px);
+        height: rem(91px);
+        background: #9A9A9A;
+        border-radius: 4px;
+        margin-bottom: rem(25px);
+        &-image{
+            display: block;
+            width: rem(45px);
+            height: rem(45px);
+            flex-shrink: 0;
+            fill: #fff;
+        }
+        @include tablets{
+            display: none;
+        }
+        
+    }
+    &__specs {
+        background: rgba(0, 0, 0, 0.06);
+        box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+        backdrop-filter: blur(40px);
+        width: rem(273px);
+        height: rem(294px);
+        display: block;
+        border-radius: 4px;
+        position: absolute;
+        opacity: 0;
+        top: -999999px;
+        left: 91px;
+        transition: opacity .6s;
+      
+      }
+    &__pager{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &--left{
+            position: relative;
+            margin-left: 1%;
+            margin-right: 2%;
+            @include tablets{
+                height: 50%;
+                right: 80%;
+
+            }
+            @include phones{
+                height: 60%;
+                right: 95%;
+                margin-right: 0;
+
+            }
+        }
+        &--right{
+            position: relative;
+            transform: rotate(180deg);
+            margin-right: 2%;
+            @include tablets{
+                height: 50%;
+                
+                left: 84%;
+
+            }
+            @include phones{
+                height: 60%;
+                left: 95%;
+                margin-right: 0;
+
+            }
+            
+        }
+        @include tablets{
+            position: absolute;
+            z-index: 2;
+            //top: rem(220px);
+        
+        }
+    }
+    &__pager-img{
+        fill: #000;
+        width: rem(14px);
+        height: rem(27px);
+    }
+    
+    &__title{
+        font-size: rem(36px);
+        line-height: rem(42px);
+        margin-bottom: rem(24px);
+        @include tablets{
+            font-size: rem(28px);
+            line-height: rem(32px);
+        
+        }
+        @include phones{
+            width: rem(416px);
+        
+        }
+    }
+    &__text{
+        color: #666666;
+        width: 80%;
+        margin-bottom: rem(27px);
+        @include phones{
+            margin-bottom: rem(20px);
+        }
+        
+    }
+    &__main-image{
+        flex-shrink: 0;
+        display: block;
+        width: rem(452px);
+        height: rem(452px);
+    
+        border-radius: 50%;
+        background: url(././img/shop_headphones.png)left rem(40px) top rem(60px) no-repeat, #FFFFFF;
+        background-size: 80%;
+        margin-right: rem(60px);
+        @include tablets{
+            background-position: 30px;
+            width: rem(306px);
+            height: rem(306px);
+            margin-bottom: rem(50px);
+            margin-right: 0px;
+
+        }
+        @include phones{
+            margin-bottom: rem(20px);
+        }
+        &--red{
+            flex-shrink: 0;
+        display: block;
+        width: rem(452px);
+        height: rem(452px);
+    
+        border-radius: 50%;
+        background: url(././img/shop_headphones_red.png)left rem(40px) top rem(60px) no-repeat, #FFFFFF;
+        background-size: 80%;
+        margin-right: rem(60px);
+        @include tablets{
+            background-position: 30px;
+            width: rem(306px);
+            height: rem(306px);
+            margin-bottom: rem(50px);
+            margin-right: 0px;
+
+        }
+        @include phones{
+            margin-bottom: rem(20px);
+        } 
+        }
+    }
+    &__buy{
+        display: flex;
+
+    }
+    &__price{
+        white-space: nowrap;
+        display: flex;
+        font-family: 'Play';
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(36px);
+        line-height: rem(60px);
+        margin-right: rem(15px);
+        @include tablets{
+            margin-right: rem(30px);
+        
+        }
+        @include phones{
+            font-size: rem(32px);
+            line-height: rem(60px);
+            margin-bottom: rem(0px);
+        }
+    }
+    
+}
+.feature{
+    display: flex;
+    width: 100%;
+    @include phones{
+        margin-bottom: rem(20px);
+    }
+    &__title{
+        color: #666666;
+        margin-bottom: rem(1px);
+    }
+    &__item{
+        margin-right: rem(90px);
+        @include tablets{
+            text-align: start;
+            margin-left: rem(30px);
+            margin-right: rem(50px);
+        }
+    }
+    &__text{
+        font-family: 'Play';
+        font-style: normal;
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(21px);
+    }
+    margin-bottom: rem(46px);
+
+}
+
+
+    .bx-wrapper{
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+        margin :0;
+    }
+
+

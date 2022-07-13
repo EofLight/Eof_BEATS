@@ -1,0 +1,112 @@
+.colors{
+    background-color: #FFF;
+    display: flex;
+    //justify-content: center;
+    justify-content: end;
+    //align-items: center;
+    //.container{
+        height: 100vh;
+        color:#FFF;
+        background: url(././img/Colors/Colors_background.png) no-repeat;
+        background-position: 70% 0;
+        background-size: 2500px 100%;
+        position: relative;
+    //}
+    &__title{
+        font-size: rem(48px);
+        line-height: rem(52px);
+        position: absolute;
+        color:#FFF;
+        top:10%;
+        left: 5%;
+    }
+    &__list{
+        display: flex;
+        justify-content: end;
+        height: 100%;
+    }
+    &__content{
+        position: relative;
+        width: 0px;
+        overflow: hidden;
+        background-color: rgba(89, 89, 89, .9);
+        backdrop-filter: blur(10px);
+        transition: width .4s;
+        &--red{
+            background: rgba(124, 17, 33, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        &.active{
+            width: rem(390px);
+            transition: width .4s;
+            /*@include tablets{
+                width: calc(100vw - 285px);
+            }*/
+            /*
+            @include phones{
+                display: flex;
+                position: absolute;
+                top:0;
+                left:89px;
+                height: 100vh;
+                width: 100vw;
+                z-index: 3;
+            }*/
+        }
+        &-block{
+            width: 100px;
+            padding: 11px  17px;
+            font-family: 'Alegreya Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: rem(16.0138px);
+            line-height: rem(24px);
+        }
+    }
+}
+
+.color{
+    height: 100%;
+    display: flex;
+    &__name{
+        transition: .2s;
+        height: 100%;
+        width: rem(102px);
+        cursor: pointer;
+        &--gray{
+            background: #999999;
+        }
+        &--black{
+            background: #000000;
+        }
+        &--red{
+            background: #E01F3C;
+        }
+        &-content{
+            transform: rotate(-90deg) translateX(50%);
+            white-space: nowrap;
+            font-family: 'Alegreya Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 43px;
+        }
+
+        display: flex;
+        position: relative;
+        align-items: end;
+        justify-content: center;
+        
+    }
+}/*
+@include phones{
+    .color__name.active{ 
+        transition: .4s;  
+        display: flex;
+        top:0;
+        left:0;
+        position: absolute;
+        height: 100vh;
+    }
+
+}*/
