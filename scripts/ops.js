@@ -131,10 +131,7 @@ $(".wrapper").on("touchmove", e=>e.preventDefault());
 
 $("body").swipe( {
     //Generic swipe handler for all directions
-    swipe:function(
-        event, 
-        direction 
-        ) {
+    swipe:function(event, direction) {
         const scroller = viewportScroller();
         let scrollDirection="";
         if(direction==="up") scrollDirection="next";

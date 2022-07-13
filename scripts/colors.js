@@ -20,7 +20,7 @@ $(".color__name").click(e=>{
     const curContent=$this.siblings(".colors__content");
     const textBlock=curContent.find(".colors__content-block");
     const textWidthMobile = needWidth - parseInt(textBlock.css("padding-left")) + parseInt(textBlock.css("padding-right"));
-    const textWidthDesktop = (sectionWidth-(300+($this.width() * 3))) - (parseInt(textBlock.css("padding-left")) + parseInt(textBlock.css("padding-right")));
+    const textWidthDesktop = 350;
     closeEvery(allContent,curContent);
     
     if(!curContent.hasClass("active")){
@@ -28,7 +28,7 @@ $(".color__name").click(e=>{
         textBlock.width(textWidthDesktop);
         curContent.width(textWidthDesktop+ (parseInt(textBlock.css("padding-left")) + parseInt(textBlock.css("padding-right"))));
         if(winWidth<=768){
-            textBlock.width(textWidthMobile);
+            textBlock.width(textWidthMobile- (parseInt(textBlock.css("padding-left")) + parseInt(textBlock.css("padding-right"))));
             curContent.width(needWidth);
             
         }

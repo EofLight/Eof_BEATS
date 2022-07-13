@@ -21,6 +21,7 @@
     "gulp": "^4.0.2"
   },
   "dependencies": {
+    "jquery-touchswipe": "^1.6.19",
     "jquery-ui": "^1.13.1"
   }
 }
