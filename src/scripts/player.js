@@ -12,37 +12,49 @@
     value: 0,
   });
 
-  let player;
+  let player = document.getElementById("player");
+
   const splashContainer = $(".player__splash");
   const playerStart = $(".player__start");
 
   let eventsInit = () => {
-    playerStart.click((e) => {
+    playerStart.on("click", (e) => {
       if (splashContainer.hasClass("active")) {
-        player.pauseVideo();
+        player.pause();
       } else {
-        player.playVideo();
+        player.play();
       }
+      splashContainer.toggleClass("active");
+      playerStart.toggleClass("active");
     });
-    splashContainer.click((e) => {
-      player.playVideo();
+    splashContainer.on("click", (event) => {
+      //if (event.target === playerStart || event.target === splashContainer) {
+      splashContainer.toggleClass("active");
+      playerStart.toggleClass("active");
+      console.log(player.paused);
+      if (player.paused) {
+        player.play();
+      } else {
+        player.pause();
+      }
+      //}
     });
   };
 
-  sliderTiming.click((e) => {
+  sliderTiming.on("click",(e) => {
     const seekToSec = sliderTiming.slider("option", "value");
-    player.seekTo(seekToSec);
+    player.currentTime = seekToSec;
   });
 
   sliderVolume.on("slidechange", (e) => {
     const toVolume = sliderVolume.slider("option", "value");
-    player.setVolume(toVolume);
+    player.volume = toVolume / 100;
   });
 
-  const onPlayerReady = () => {
+  player.oncanplay = () => {
     let interval;
 
-    const durationSec = player.getDuration();
+    const durationSec = player.duration;
     sliderTiming.slider("option", "max", durationSec);
 
     if (typeof interval !== "undefined") {
@@ -50,21 +62,14 @@
     }
 
     interval = setInterval(() => {
-      const completedSec = player.getCurrentTime();
+      const completedSec = player.currentTime;
       sliderTiming.slider("option", "value", completedSec);
     }, 1000);
   };
-
-  const onPlayerStateChange = (event) => {
+  /*
+  splashContainer.on("click", (event) => {
+    
     /*
-        Возвращает состояние проигрывателя. Возможные значения:
-        -1 – воспроизведение видео не началось
-        0 – воспроизведение видео завершено
-        1 – воспроизведение
-        2 – пауза
-        3 – буферизация
-        5 – видео находится в очереди 
-    */
     switch (event.data) {
       case 1:
         splashContainer.addClass("active");
@@ -75,28 +80,7 @@
         playerStart.removeClass("active");
         break;
     }
-  };
-
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player("yt-player", {
-      height: "392",
-      width: "662",
-      videoId: "Dd1VIeTMGQs",
-      events: {
-        onReady: onPlayerReady,
-        onStateChange: onPlayerStateChange,
-      },
-      playerVars: {
-        controls: 0,
-        disablekb: 0,
-        showinfo: 0,
-        rel: 0,
-        autoplay: 0,
-        modestbranding: 0,
-        fs: 0,
-      },
-    });
-  }
+  });*/
 
   eventsInit();
 })();

@@ -8,6 +8,7 @@
     const allContent = $(".colors__content");
 
     const $this = $(e.currentTarget);
+    const parent = $this.closest('.colors__item');
 
     const winWidth = $(window).width();
     const needWidth = winWidth - $this.width() * 3;
@@ -24,6 +25,7 @@
 
     if (!curContent.hasClass("active")) {
       curContent.addClass("active");
+      parent.addClass('colors__item--active');
       textBlock.width(textWidthDesktop);
       curContent.width(
         textWidthDesktop +
@@ -38,8 +40,17 @@
         );
         curContent.width(needWidth);
       }
+      if (winWidth <= 480) {
+        textBlock.width(
+          winWidth - $this.width() -
+            (parseInt(textBlock.css("padding-left")) +
+              parseInt(textBlock.css("padding-right")))
+        );
+        curContent.width(winWidth-$this.width());
+      }
     } else {
       curContent.removeClass("active");
+      parent.removeClass('colors__item--active');
       curContent.width(0);
     }
     /*

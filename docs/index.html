@@ -694,8 +694,17 @@
                     <h1 class="section-title">Как мы работаем</h1>
                     <div class="player-container">
                         <div class="player">
-                            <div class="player__wrapper">
-                                <div id="yt-player" class="player__elem">
+                            <video src="./img/beatsVideo.mp4" id="player" poster="./img/player/player_bg.png">
+                                <source src="./img/beatsVideo.mp4" type="video/mp4">
+                            </video>
+                            <div class="player__splash">
+                                <svg class="player__splash-icon">
+                                    <use xlink:href="././img/sprite.svg#yt-player">
+                                    </use>
+                                </svg>
+                            </div>
+                            <!-- <div class="player__wrapper">
+                                 <div id="yt-player" class="player__elem">
                                     
                                 </div>
                                 <div class="player__splash">
@@ -704,7 +713,8 @@
                                         </use>
                                     </svg>
                                 </div>
-                            </div>
+
+                            </div> -->
                             <div class="player__controls">
                                 <div class="player__start">
 
@@ -877,27 +887,26 @@
         <nav class="menu--full menu-vertical">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="#" class="menu__link">О нас</a>
+                    <a href="#" data-scroll-to="why" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item ">
-                    <a href="#" class="menu__link">Наушники</a>
+                    <a href="#" data-scroll-to="shop" class="menu__link">Наушники</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Команда</a>
+                    <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Цвета</a>
+                    <a href="#" data-scroll-to="colors" class="menu__link">Цвета</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Отзывы</a>
+                    <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Как мы работаем</a>
+                    <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
+                    <a href="#" data-scroll-to="map" class="menu__link">Контакты</a>
                 </li>
-            </ul>
         </nav>
     </div>
 
@@ -928,3 +937,28 @@
 </body>
 
 </html>
+<!-- 
+<nav class="menu">
+    <ul class="menu__list">
+        <li class="menu__item">
+            <a href="#" data-scroll-to="why" class="menu__link">О нас</a>
+        </li>
+        <li class="menu__item ">
+            <a href="#" data-scroll-to="shop" class="menu__link">Наушники</a>
+        </li>
+        <li class="menu__item">
+            <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
+        </li>
+        <li class="menu__item">
+            <a href="#" data-scroll-to="colors" class="menu__link">Цвета</a>
+        </li>
+        <li class="menu__item">
+            <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
+        </li>
+        <li class="menu__item">
+            <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a>
+        </li>
+        <li class="menu__item">
+            <a href="#" data-scroll-to="map" class="menu__link">Контакты</a>
+        </li>
+    </ul> -->

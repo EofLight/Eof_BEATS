@@ -11,7 +11,7 @@
     return errorFields.length === 0;
   };
 
-  $(".form").submit(function (e) {
+  $(".form").on("submit", function (e) {
     e.preventDefault();
 
     const form = $(e.currentTarget);
@@ -29,6 +29,7 @@
     modal.removeClass("error-modal");
 
     if (isValid) {
+      $('body').addClass('locked');
       $.ajax({
         type: "post",
         url: "https://webdev-api.loftschool.com/sendmail",
@@ -64,8 +65,9 @@
     }
   });
 
-  $(".btn-close").click(function (e) {
+  $(".btn-close").on("click", function (e) {
     e.preventDefault();
     Fancybox.close();
+    $('body').removeClass('locked');
   });
 })();

@@ -6,6 +6,7 @@
     event.preventDefault();
 
     fullscreenMenu.style.display = "block";
+    $('body').addClass('locked');
   });
 
   fullscreenMenu
@@ -13,7 +14,16 @@
     .addEventListener("click", function (event) {
       event.preventDefault();
       fullscreenMenu.style.display = "none";
+      $('body').removeClass('locked');
     });
+
+  fullscreenMenu.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (e.target.classList.contains("menu__link")) {
+      fullscreenMenu.style.display = "none";
+      $('body').removeClass('locked');
+    }
+  });
 
   const specbutton = $(".shop__func");
   const specBlock = $(".shop__specs");

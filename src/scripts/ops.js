@@ -40,7 +40,7 @@
   };
 
   const performTransition = (sectionEq) => {
-    if (inScroll) return;
+    if (inScroll ||$('body').hasClass('locked')) return;
     const trasitionOver = 1000;
     const mouseInertialOver = 300;
     inScroll = true;
@@ -116,7 +116,7 @@
     const $this = $(e.currentTarget);
     const target = $this.attr("data-scroll-to");
     const reqSection = $(`[data-section-id=${target}]`);
-
+    $('body').removeClass('locked');
     performTransition(reqSection.index());
   });
 
